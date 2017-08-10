@@ -9,12 +9,12 @@ package jogomemoria.gui;
  *
  * @author Aluno
  */
-public class JogoMemoriaJPanel extends javax.swing.JPanel {
+public class JogoMemoriaJPanelDificil extends javax.swing.JPanel {
 
     /**
      * Creates new form JogoMemoriaJPanel
      */
-    public JogoMemoriaJPanel() {
+    public JogoMemoriaJPanelDificil() {
         initComponents();
     }
 
@@ -78,15 +78,13 @@ public class JogoMemoriaJPanel extends javax.swing.JPanel {
         jq141 = new javax.swing.JLabel();
         jq139 = new javax.swing.JLabel();
         jq132 = new javax.swing.JLabel();
-        jq130 = new javax.swing.JLabel();
-        l9 = new javax.swing.JLabel();
-        titulo8 = new javax.swing.JLabel();
+        LB2 = new javax.swing.JLabel();
+        LB1 = new javax.swing.JLabel();
+        LBTitulo = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jSlider1 = new javax.swing.JSlider();
-        jLabel5 = new javax.swing.JLabel();
+        LBTime = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(153, 255, 255));
 
@@ -193,24 +191,18 @@ public class JogoMemoriaJPanel extends javax.swing.JPanel {
 
         jq132.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/1.jpg"))); // NOI18N
 
-        jq130.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/1.jpg"))); // NOI18N
+        LB2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/1.jpg"))); // NOI18N
 
-        l9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/1.jpg"))); // NOI18N
+        LB1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/1.jpg"))); // NOI18N
 
-        titulo8.setFont(new java.awt.Font("Times New Roman", 2, 36)); // NOI18N
-        titulo8.setText("Jogo da Memória");
+        LBTitulo.setFont(new java.awt.Font("Times New Roman", 2, 36)); // NOI18N
+        LBTitulo.setText("Jogo da Memória");
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/19.jpg"))); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 51, 51));
-        jLabel4.setText("Last Time");
-
-        jSlider1.setBackground(new java.awt.Color(153, 255, 255));
-
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Volume");
+        LBTime.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
+        LBTime.setForeground(new java.awt.Color(255, 51, 51));
+        LBTime.setText("Last Time");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -333,19 +325,15 @@ public class JogoMemoriaJPanel extends javax.swing.JPanel {
                                 .addComponent(jq175)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jq131))))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(layout.createSequentialGroup()
-                            .addComponent(titulo8)
-                            .addGap(42, 42, 42)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jSlider1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(LBTitulo)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addComponent(l9)
+                            .addComponent(LBTime, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(LB1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jq130)
+                            .addComponent(LB2)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jq132)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -366,23 +354,19 @@ public class JogoMemoriaJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(titulo8)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jq144)
-                    .addComponent(l9)
-                    .addComponent(jq130)
-                    .addComponent(jq132)
-                    .addComponent(jq139)
-                    .addComponent(jq141)
-                    .addComponent(jq138)
-                    .addComponent(jq142)
-                    .addComponent(jq133))
+                    .addComponent(LBTitulo)
+                    .addComponent(LBTime, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jq144, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(LB2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jq132, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jq139, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jq141, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jq138, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jq142, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jq133, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(LB1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -463,14 +447,14 @@ public class JogoMemoriaJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel LB1;
+    private javax.swing.JLabel LB2;
+    private javax.swing.JLabel LBTime;
+    private javax.swing.JLabel LBTitulo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JSlider jSlider1;
-    private javax.swing.JLabel jq130;
     private javax.swing.JLabel jq131;
     private javax.swing.JLabel jq132;
     private javax.swing.JLabel jq133;
@@ -521,7 +505,5 @@ public class JogoMemoriaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jq179;
     private javax.swing.JLabel jq180;
     private javax.swing.JLabel jq181;
-    private javax.swing.JLabel l9;
-    private javax.swing.JLabel titulo8;
     // End of variables declaration//GEN-END:variables
 }

@@ -167,21 +167,16 @@
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="titulo8" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jSlider1" max="32767" attributes="0"/>
-                              <Component id="jLabel5" min="-2" pref="200" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="LBTitulo" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="jLabel4" min="-2" pref="144" max="-2" attributes="0"/>
+                          <Component id="LBTime" min="-2" pref="144" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="l9" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="LB1" min="-2" pref="90" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jq130" min="-2" max="-2" attributes="0"/>
+                          <Component id="LB2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jq132" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
@@ -207,25 +202,20 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel5" min="-2" pref="30" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jSlider1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="titulo8" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel4" min="-2" pref="37" max="-2" attributes="0"/>
+                  <Component id="LBTitulo" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="LBTime" min="-2" pref="37" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="46" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jq144" min="-2" max="-2" attributes="0"/>
-                  <Component id="l9" min="-2" max="-2" attributes="0"/>
-                  <Component id="jq130" min="-2" max="-2" attributes="0"/>
-                  <Component id="jq132" min="-2" max="-2" attributes="0"/>
-                  <Component id="jq139" min="-2" max="-2" attributes="0"/>
-                  <Component id="jq141" min="-2" max="-2" attributes="0"/>
-                  <Component id="jq138" min="-2" max="-2" attributes="0"/>
-                  <Component id="jq142" min="-2" max="-2" attributes="0"/>
-                  <Component id="jq133" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="63" pref="23" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jq144" max="32767" attributes="0"/>
+                  <Component id="LB2" max="32767" attributes="0"/>
+                  <Component id="jq132" max="32767" attributes="0"/>
+                  <Component id="jq139" max="32767" attributes="0"/>
+                  <Component id="jq141" max="32767" attributes="0"/>
+                  <Component id="jq138" max="32767" attributes="0"/>
+                  <Component id="jq142" max="32767" attributes="0"/>
+                  <Component id="jq133" max="32767" attributes="0"/>
+                  <Component id="LB1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -687,21 +677,21 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jq130">
+    <Component class="javax.swing.JLabel" name="LB2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Imagens/1.jpg"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="l9">
+    <Component class="javax.swing.JLabel" name="LB1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Imagens/1.jpg"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="titulo8">
+    <Component class="javax.swing.JLabel" name="LBTitulo">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="36" style="2"/>
@@ -720,7 +710,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="LBTime">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="36" style="0"/>
@@ -729,22 +719,6 @@
           <Color blue="33" green="33" red="ff" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Last Time"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JSlider" name="jSlider1">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="99" type="rgb"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="24" style="2"/>
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Volume"/>
       </Properties>
     </Component>
   </SubComponents>
