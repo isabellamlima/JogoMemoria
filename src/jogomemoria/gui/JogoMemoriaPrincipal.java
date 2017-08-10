@@ -87,7 +87,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
                     .addComponent(lblNivel)
                     .addComponent(spnTempo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bntIniciar))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jSplitPane1.setLeftComponent(pnlPrincipal);
@@ -100,16 +100,16 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         pnlPrincipal2Layout.setHorizontalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlPrincipal2Layout.createSequentialGroup()
-                .addGap(214, 214, 214)
+                .addGap(213, 213, 213)
                 .addComponent(lblTitulo)
-                .addContainerGap(316, Short.MAX_VALUE))
+                .addContainerGap(214, Short.MAX_VALUE))
         );
         pnlPrincipal2Layout.setVerticalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlPrincipal2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(368, Short.MAX_VALUE))
+                .addContainerGap(268, Short.MAX_VALUE))
         );
 
         jSplitPane1.setRightComponent(pnlPrincipal2);
