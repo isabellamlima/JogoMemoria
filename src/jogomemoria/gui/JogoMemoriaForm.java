@@ -27,31 +27,137 @@ public class JogoMemoriaForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jToggleButton1 = new javax.swing.JToggleButton();
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
+        jInternalFrame1 = new javax.swing.JInternalFrame();
+        titulo = new javax.swing.JLabel();
+        niveis = new javax.swing.JLabel();
+        dTempo = new javax.swing.JLabel();
+        Facil = new javax.swing.JRadioButton();
+        Normal = new javax.swing.JRadioButton();
+        Dificil = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jToggleButton1.setText("jToggleButton1");
+        jInternalFrame1.setVisible(true);
+
+        titulo.setFont(new java.awt.Font("Bauhaus 93", 0, 18)); // NOI18N
+        titulo.setText("Jogo da Memória");
+
+        niveis.setFont(new java.awt.Font("Bauhaus 93", 0, 14)); // NOI18N
+        niveis.setText("Níveis");
+
+        dTempo.setFont(new java.awt.Font("Bauhaus 93", 0, 14)); // NOI18N
+        dTempo.setText("Defina o tempo para jogar");
+
+        Facil.setFont(new java.awt.Font("Bauhaus 93", 0, 12)); // NOI18N
+        Facil.setText("Fácil");
+        Facil.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                FacilMouseClicked(evt);
+            }
+        });
+        Facil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FacilActionPerformed(evt);
+            }
+        });
+
+        Normal.setFont(new java.awt.Font("Bauhaus 93", 0, 12)); // NOI18N
+        Normal.setText("Normal");
+        Normal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NormalActionPerformed(evt);
+            }
+        });
+
+        Dificil.setFont(new java.awt.Font("Bauhaus 93", 0, 12)); // NOI18N
+        Dificil.setText("Difícil");
+        Dificil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DificilActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
+        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
+        jInternalFrame1Layout.setHorizontalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                .addContainerGap(188, Short.MAX_VALUE)
+                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                        .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(206, 206, 206))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                        .addComponent(dTempo)
+                        .addGap(196, 196, 196))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                        .addComponent(Facil)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(niveis, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                                .addComponent(Normal)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Dificil)))
+                        .addGap(178, 178, 178))))
+        );
+        jInternalFrame1Layout.setVerticalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(titulo)
+                .addGap(18, 18, 18)
+                .addComponent(dTempo)
+                .addGap(103, 103, 103)
+                .addComponent(niveis)
+                .addGap(26, 26, 26)
+                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Dificil)
+                    .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Facil)
+                            .addComponent(Normal))
+                        .addGap(45, 45, 45)))
+                .addContainerGap(94, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(167, Short.MAX_VALUE)
-                .addComponent(jToggleButton1)
-                .addGap(128, 128, 128))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jInternalFrame1)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(74, 74, 74)
-                .addComponent(jToggleButton1)
-                .addContainerGap(203, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jInternalFrame1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void FacilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FacilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FacilActionPerformed
+
+    private void DificilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DificilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DificilActionPerformed
+
+    private void NormalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NormalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NormalActionPerformed
+
+    private void FacilMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FacilMouseClicked
+
+    }//GEN-LAST:event_FacilMouseClicked
 
     /**
      * @param args the command line arguments
@@ -89,6 +195,14 @@ public class JogoMemoriaForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JRadioButton Dificil;
+    private javax.swing.JRadioButton Facil;
+    private javax.swing.JRadioButton Normal;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.JLabel dTempo;
+    private javax.swing.JInternalFrame jInternalFrame1;
+    private javax.swing.JLabel niveis;
+    private javax.swing.JLabel titulo;
     // End of variables declaration//GEN-END:variables
 }
