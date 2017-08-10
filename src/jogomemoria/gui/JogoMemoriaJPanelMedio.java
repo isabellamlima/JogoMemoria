@@ -27,8 +27,8 @@ public class JogoMemoriaJPanelMedio extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        LBTitulo = new javax.swing.JLabel();
-        LBTime = new javax.swing.JLabel();
+        lblTitulo = new javax.swing.JLabel();
+        lblTime = new javax.swing.JLabel();
         LB4 = new javax.swing.JLabel();
         LB3 = new javax.swing.JLabel();
         LB2 = new javax.swing.JLabel();
@@ -69,13 +69,13 @@ public class JogoMemoriaJPanelMedio extends javax.swing.JPanel {
         setBackground(new java.awt.Color(153, 255, 255));
         setForeground(new java.awt.Color(153, 255, 255));
 
-        LBTitulo.setBackground(new java.awt.Color(102, 255, 255));
-        LBTitulo.setFont(new java.awt.Font("Times New Roman", 2, 36)); // NOI18N
-        LBTitulo.setText("Jogo da Memória");
+        lblTitulo.setBackground(new java.awt.Color(102, 255, 255));
+        lblTitulo.setFont(new java.awt.Font("Times New Roman", 2, 36)); // NOI18N
+        lblTitulo.setText("Jogo da Memória");
 
-        LBTime.setFont(new java.awt.Font("Times New Roman", 2, 36)); // NOI18N
-        LBTime.setForeground(new java.awt.Color(255, 0, 0));
-        LBTime.setText("Last Time");
+        lblTime.setFont(new java.awt.Font("Times New Roman", 2, 36)); // NOI18N
+        lblTime.setForeground(new java.awt.Color(255, 0, 0));
+        lblTime.setText("Last Time");
 
         LB4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/15.jpg"))); // NOI18N
 
@@ -154,9 +154,9 @@ public class JogoMemoriaJPanelMedio extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(LBTitulo)
+                .addComponent(lblTitulo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 248, Short.MAX_VALUE)
-                .addComponent(LBTime))
+                .addComponent(lblTime))
             .addGroup(layout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -241,8 +241,8 @@ public class JogoMemoriaJPanelMedio extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(LBTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(LBTime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lblTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblTime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
@@ -339,95 +339,7 @@ public class JogoMemoriaJPanelMedio extends javax.swing.JPanel {
     private javax.swing.JLabel LB7;
     private javax.swing.JLabel LB8;
     private javax.swing.JLabel LB9;
-    private javax.swing.JLabel LBTime;
-    private javax.swing.JLabel LBTitulo;
-    private javax.swing.JInternalFrame jInternalFrame1;
-    private javax.swing.JInternalFrame jInternalFrame2;
-    private javax.swing.JInternalFrame jInternalFrame3;
-    private javax.swing.JInternalFrame jInternalFrame4;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jq10;
-    private javax.swing.JLabel jq11;
-    private javax.swing.JLabel jq12;
-    private javax.swing.JLabel jq13;
-    private javax.swing.JLabel jq14;
-    private javax.swing.JLabel jq15;
-    private javax.swing.JLabel jq16;
-    private javax.swing.JLabel jq17;
-    private javax.swing.JLabel jq18;
-    private javax.swing.JLabel jq19;
-    private javax.swing.JLabel jq2;
-    private javax.swing.JLabel jq20;
-    private javax.swing.JLabel jq21;
-    private javax.swing.JLabel jq22;
-    private javax.swing.JLabel jq23;
-    private javax.swing.JLabel jq24;
-    private javax.swing.JLabel jq25;
-    private javax.swing.JLabel jq26;
-    private javax.swing.JLabel jq27;
-    private javax.swing.JLabel jq28;
-    private javax.swing.JLabel jq29;
-    private javax.swing.JLabel jq3;
-    private javax.swing.JLabel jq30;
-    private javax.swing.JLabel jq31;
-    private javax.swing.JLabel jq32;
-    private javax.swing.JLabel jq33;
-    private javax.swing.JLabel jq34;
-    private javax.swing.JLabel jq35;
-    private javax.swing.JLabel jq36;
-    private javax.swing.JLabel jq37;
-    private javax.swing.JLabel jq38;
-    private javax.swing.JLabel jq39;
-    private javax.swing.JLabel jq4;
-    private javax.swing.JLabel jq40;
-    private javax.swing.JLabel jq41;
-    private javax.swing.JLabel jq42;
-    private javax.swing.JLabel jq43;
-    private javax.swing.JLabel jq44;
-    private javax.swing.JLabel jq45;
-    private javax.swing.JLabel jq46;
-    private javax.swing.JLabel jq47;
-    private javax.swing.JLabel jq48;
-    private javax.swing.JLabel jq49;
-    private javax.swing.JLabel jq5;
-    private javax.swing.JLabel jq50;
-    private javax.swing.JLabel jq51;
-    private javax.swing.JLabel jq52;
-    private javax.swing.JLabel jq53;
-    private javax.swing.JLabel jq54;
-    private javax.swing.JLabel jq55;
-    private javax.swing.JLabel jq56;
-    private javax.swing.JLabel jq57;
-    private javax.swing.JLabel jq58;
-    private javax.swing.JLabel jq59;
-    private javax.swing.JLabel jq6;
-    private javax.swing.JLabel jq60;
-    private javax.swing.JLabel jq61;
-    private javax.swing.JLabel jq62;
-    private javax.swing.JLabel jq63;
-    private javax.swing.JLabel jq64;
-    private javax.swing.JLabel jq65;
-    private javax.swing.JLabel jq7;
-    private javax.swing.JLabel jq8;
-    private javax.swing.JLabel jq9;
-    private javax.swing.JLabel l1;
-    private javax.swing.JLabel l2;
-    private javax.swing.JLabel l3;
-    private javax.swing.JLabel l4;
-    private javax.swing.JLabel titulo;
-    private javax.swing.JLabel titulo1;
-    private javax.swing.JLabel titulo2;
-    private javax.swing.JLabel titulo3;
+    private javax.swing.JLabel lblTime;
+    private javax.swing.JLabel lblTitulo;
     // End of variables declaration//GEN-END:variables
 }
