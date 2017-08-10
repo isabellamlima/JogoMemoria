@@ -36,7 +36,6 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         spnTempo = new javax.swing.JSpinner();
         pnlPrincipal2 = new javax.swing.JPanel();
         lblTitulo = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -96,8 +95,6 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
         lblTitulo.setText("Jogo da Memória");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/faça.jpg"))); // NOI18N
-
         javax.swing.GroupLayout pnlPrincipal2Layout = new javax.swing.GroupLayout(pnlPrincipal2);
         pnlPrincipal2.setLayout(pnlPrincipal2Layout);
         pnlPrincipal2Layout.setHorizontalGroup(
@@ -105,20 +102,14 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
             .addGroup(pnlPrincipal2Layout.createSequentialGroup()
                 .addGap(214, 214, 214)
                 .addComponent(lblTitulo)
-                .addContainerGap(215, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPrincipal2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(316, Short.MAX_VALUE))
         );
         pnlPrincipal2Layout.setVerticalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPrincipal2Layout.createSequentialGroup()
+            .addGroup(pnlPrincipal2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addContainerGap(368, Short.MAX_VALUE))
         );
 
         jSplitPane1.setRightComponent(pnlPrincipal2);
@@ -170,7 +161,6 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bntIniciar;
     private javax.swing.JComboBox<String> cmbNivel;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JLabel lblNivel;
     private javax.swing.JLabel lblTempo;
