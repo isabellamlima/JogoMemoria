@@ -35,22 +35,22 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         bntIniciar = new javax.swing.JButton();
         spnTempo = new javax.swing.JSpinner();
         pnlPrincipal2 = new javax.swing.JPanel();
-        lblTitulo = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        lblTempo.setFont(new java.awt.Font("Bauhaus 93", 0, 14)); // NOI18N
+        lblTempo.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         lblTempo.setText("Tempo");
 
-        cmbNivel.setFont(new java.awt.Font("Bauhaus 93", 0, 11)); // NOI18N
+        cmbNivel.setFont(new java.awt.Font("Times New Roman", 2, 11)); // NOI18N
         cmbNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Fácil", "Intermediario", "Difícil" }));
 
-        lblNivel.setFont(new java.awt.Font("Bauhaus 93", 0, 14)); // NOI18N
+        lblNivel.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         lblNivel.setText("Nível");
 
-        bntIniciar.setFont(new java.awt.Font("Bauhaus 93", 0, 11)); // NOI18N
+        bntIniciar.setFont(new java.awt.Font("Times New Roman", 2, 11)); // NOI18N
         bntIniciar.setText("Iniciar");
         bntIniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,7 +58,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        spnTempo.setFont(new java.awt.Font("Bauhaus 93", 0, 11)); // NOI18N
+        spnTempo.setFont(new java.awt.Font("Times New Roman", 2, 11)); // NOI18N
 
         javax.swing.GroupLayout pnlPrincipalLayout = new javax.swing.GroupLayout(pnlPrincipal);
         pnlPrincipal.setLayout(pnlPrincipalLayout);
@@ -73,9 +73,9 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
                 .addComponent(lblNivel)
                 .addGap(18, 18, 18)
                 .addComponent(cmbNivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 203, Short.MAX_VALUE)
                 .addComponent(bntIniciar)
-                .addGap(96, 96, 96))
+                .addGap(57, 57, 57))
         );
         pnlPrincipalLayout.setVerticalGroup(
             pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -92,24 +92,23 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
 
         jSplitPane1.setLeftComponent(pnlPrincipal);
 
-        lblTitulo.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        lblTitulo.setText("Jogo da Memória");
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/capa.jpg"))); // NOI18N
 
         javax.swing.GroupLayout pnlPrincipal2Layout = new javax.swing.GroupLayout(pnlPrincipal2);
         pnlPrincipal2.setLayout(pnlPrincipal2Layout);
         pnlPrincipal2Layout.setHorizontalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlPrincipal2Layout.createSequentialGroup()
-                .addGap(213, 213, 213)
-                .addComponent(lblTitulo)
-                .addContainerGap(214, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPrincipal2Layout.createSequentialGroup()
+                .addContainerGap(66, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 589, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31))
         );
         pnlPrincipal2Layout.setVerticalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlPrincipal2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(268, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPrincipal2Layout.createSequentialGroup()
+                .addContainerGap(40, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addGap(19, 19, 19))
         );
 
         jSplitPane1.setRightComponent(pnlPrincipal2);
@@ -161,10 +160,10 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bntIniciar;
     private javax.swing.JComboBox<String> cmbNivel;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JLabel lblNivel;
     private javax.swing.JLabel lblTempo;
-    private javax.swing.JLabel lblTitulo;
     private javax.swing.JPanel pnlPrincipal;
     private javax.swing.JPanel pnlPrincipal2;
     private javax.swing.JSpinner spnTempo;
