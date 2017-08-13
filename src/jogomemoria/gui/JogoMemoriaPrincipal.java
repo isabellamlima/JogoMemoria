@@ -46,6 +46,11 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
 
         cmbNivel.setFont(new java.awt.Font("Times New Roman", 2, 11)); // NOI18N
         cmbNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Fácil", "Intermediario", "Difícil" }));
+        cmbNivel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbNivelActionPerformed(evt);
+            }
+        });
 
         lblNivel.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         lblNivel.setText("Nível");
@@ -58,7 +63,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        spnTempo.setFont(new java.awt.Font("Times New Roman", 2, 11)); // NOI18N
+        spnTempo.setFont(new java.awt.Font("Times New Roman", 3, 11)); // NOI18N
 
         javax.swing.GroupLayout pnlPrincipalLayout = new javax.swing.GroupLayout(pnlPrincipal);
         pnlPrincipal.setLayout(pnlPrincipalLayout);
@@ -121,6 +126,10 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     private void bntIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntIniciarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_bntIniciarActionPerformed
+
+    private void cmbNivelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbNivelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbNivelActionPerformed
 
     /**
      * @param args the command line arguments
