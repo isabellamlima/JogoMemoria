@@ -5,6 +5,8 @@
  */
 package jogomemoria.gui;
 
+import java.awt.Component;
+
 /**
  *
  * @author isamo
@@ -35,7 +37,6 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         bntIniciar = new javax.swing.JButton();
         spnTempo = new javax.swing.JSpinner();
         pnlPrincipal2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -97,23 +98,15 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
 
         jSplitPane1.setLeftComponent(pnlPrincipal);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/capa.jpg"))); // NOI18N
-
         javax.swing.GroupLayout pnlPrincipal2Layout = new javax.swing.GroupLayout(pnlPrincipal2);
         pnlPrincipal2.setLayout(pnlPrincipal2Layout);
         pnlPrincipal2Layout.setHorizontalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPrincipal2Layout.createSequentialGroup()
-                .addContainerGap(66, Short.MAX_VALUE)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 589, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31))
+            .addGap(0, 686, Short.MAX_VALUE)
         );
         pnlPrincipal2Layout.setVerticalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPrincipal2Layout.createSequentialGroup()
-                .addContainerGap(40, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(19, 19, 19))
+            .addGap(0, 382, Short.MAX_VALUE)
         );
 
         jSplitPane1.setRightComponent(pnlPrincipal2);
@@ -124,7 +117,20 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bntIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntIniciarActionPerformed
-        // TODO add your handling code here:
+        if (cmbNivel == Fácil) {
+            JogoMemoriaJPanelFacil tela = new JogoMemoriaJPanelFacil();
+            tela.setVisible(true);
+        } else {
+            if (cmbNivel == Intermediário) {
+                JogoMemoriaJPanelFacil tela = new JogoMemoriaJPanelFacil();
+                tela.setVisible(true);
+            } else {
+                if (cmbNivel == Difícil) {
+                    JogoMemoriaJPanelFacil tela = new JogoMemoriaJPanelFacil();
+                    tela.setVisible(true);
+                }
+            }
+        }
     }//GEN-LAST:event_bntIniciarActionPerformed
 
     private void cmbNivelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbNivelActionPerformed
@@ -169,7 +175,6 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bntIniciar;
     private javax.swing.JComboBox<String> cmbNivel;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JLabel lblNivel;
     private javax.swing.JLabel lblTempo;
