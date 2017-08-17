@@ -118,16 +118,16 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
 
     private void bntIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntIniciarActionPerformed
         if (cmbNivel == Fácil) {
-            JogoMemoriaJPanelFacil tela = new JogoMemoriaJPanelFacil();
-            tela.setVisible(true);
+            JogoMemoriaJPanelFacil facil = new JogoMemoriaJPanelFacil();
+            facil.setVisible(true);
         } else {
             if (cmbNivel == Intermediário) {
-                JogoMemoriaJPanelFacil tela = new JogoMemoriaJPanelFacil();
-                tela.setVisible(true);
+                JogoMemoriaJPanelFacil medio = new JogoMemoriaJPanelFacil();
+                medio.setVisible(true);
             } else {
                 if (cmbNivel == Difícil) {
-                    JogoMemoriaJPanelFacil tela = new JogoMemoriaJPanelFacil();
-                    tela.setVisible(true);
+                    JogoMemoriaJPanelFacil dificil = new JogoMemoriaJPanelFacil();
+                    dificil.setVisible(true);
                 }
             }
         }
