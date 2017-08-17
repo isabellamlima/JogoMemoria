@@ -28,7 +28,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         pnlPrincipal = new javax.swing.JPanel();
         lblTempo = new javax.swing.JLabel();
         lblNivel = new javax.swing.JLabel();
-        cbNiveis = new javax.swing.JComboBox();
+        cmbNiveis = new javax.swing.JComboBox();
         cgTempo = new javax.swing.JSpinner();
         bntIniciar = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
@@ -47,8 +47,8 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         lblNivel.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         lblNivel.setText("Nível");
 
-        cbNiveis.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        cbNiveis.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cmbNiveis.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        cmbNiveis.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         cgTempo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
 
@@ -82,7 +82,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
                     .addGroup(pnlPrincipalLayout.createSequentialGroup()
                         .addComponent(lblNivel, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cbNiveis, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(cmbNiveis, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(41, 41, 41)
                 .addGroup(pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(bntIniciar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -100,7 +100,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
                 .addGroup(pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(lblNivel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(cbNiveis, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(cmbNiveis, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
@@ -190,8 +190,8 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bntIniciar;
-    private javax.swing.JComboBox cbNiveis;
     private javax.swing.JSpinner cgTempo;
+    private javax.swing.JComboBox cmbNiveis;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel lblImage;
     private javax.swing.JLabel lblNivel;
