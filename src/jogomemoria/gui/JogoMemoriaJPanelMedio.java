@@ -77,77 +77,77 @@ public class JogoMemoriaJPanelMedio extends javax.swing.JPanel {
         lblTime.setForeground(new java.awt.Color(255, 0, 0));
         lblTime.setText("Last Time");
 
-        lblImg4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/15.jpg"))); // NOI18N
+        lblImg4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/9.jpg"))); // NOI18N
+        lblImg3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/9.jpg"))); // NOI18N
+        lblImg2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/1.jpg"))); // NOI18N
+        lblImg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/12.jpg"))); // NOI18N
+        lblImg7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/7.jpg"))); // NOI18N
+        lblImg8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/27.jpg"))); // NOI18N
+        lblImg9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/12.jpg"))); // NOI18N
+        lblImg10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/25_1.png"))); // NOI18N
+        lblImg16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/27.jpg"))); // NOI18N
+        lblImg15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/6.jpg"))); // NOI18N
+        lblImg14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/15.jpg"))); // NOI18N
+        lblImg13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/1.jpg"))); // NOI18N
+        lblImg19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/6.jpg"))); // NOI18N
+        lblImg20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/7.jpg"))); // NOI18N
+        lblImg21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/25_1.png"))); // NOI18N
+        lblImg22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/11.jpg"))); // NOI18N
+        lblImg5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/11.jpg"))); // NOI18N
+        lblImg11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/17.jpg"))); // NOI18N
+        lblImg17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/17.jpg"))); // NOI18N
+        lblImg23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/23.jpg"))); // NOI18N
+        lblImg25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/23.jpg"))); // NOI18N
+        lblImg26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/21.jpg"))); // NOI18N
+        lblImg27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/21.jpg"))); // NOI18N
+        lblImg28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/26.png"))); // NOI18N
+        lblImg6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/26.png"))); // NOI18N
+        lblImg12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/5.jpg"))); // NOI18N
+        lblImg18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/19.jpg"))); // NOI18N
+        lblImg24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/19.jpg"))); // NOI18N
+        lblImg29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/5.jpg"))); // NOI18N
+        lblImg30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/2.jpg"))); // NOI18N
+        lblImg31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/2.jpg"))); // NOI18N
+        lblImg32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/20.jpg"))); // NOI18N
+        lblImg33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/20.jpg"))); // NOI18N
+        lblImg34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/24.jpg"))); // NOI18N
+        lblImg35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
-        lblImg36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/24.jpg"))); // NOI18N
+        lblImg36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -297,7 +297,7 @@ public class JogoMemoriaJPanelMedio extends javax.swing.JPanel {
                     .addComponent(lblImg34)
                     .addComponent(lblImg35)
                     .addComponent(lblImg36))
-                .addGap(0, 10, Short.MAX_VALUE))
+                .addGap(0, 28, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

@@ -88,117 +88,171 @@ public class JogoMemoriaJPanelDificil extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(153, 255, 255));
 
-        lblImg49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/26.png"))); // NOI18N
+        lblImg49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg49.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/26.png"))); // NOI18N
+        lblImg50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg50.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/26.png"))); // NOI18N
+        lblImg51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg51.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/27.jpg"))); // NOI18N
+        lblImg52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg52.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/25_1.png"))); // NOI18N
+        lblImg46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg46.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/25_1.png"))); // NOI18N
+        lblImg47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg47.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/25_1.png"))); // NOI18N
+        lblImg48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg48.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/11.jpg"))); // NOI18N
+        lblImg20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/11.jpg"))); // NOI18N
+        lblImg21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg21.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/7.jpg"))); // NOI18N
+        lblImg14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/9.jpg"))); // NOI18N
+        lblImg18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/17.jpg"))); // NOI18N
+        lblImg30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg30.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/17.jpg"))); // NOI18N
+        lblImg29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg29.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/12.jpg"))); // NOI18N
+        lblImg22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg22.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/17.jpg"))); // NOI18N
+        lblImg28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg28.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/7.jpg"))); // NOI18N
+        lblImg13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/9.jpg"))); // NOI18N
+        lblImg16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/24.jpg"))); // NOI18N
+        lblImg43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg43.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/19.jpg"))); // NOI18N
+        lblImg33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg33.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/20.jpg"))); // NOI18N
+        lblImg35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg35.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/23.jpg"))); // NOI18N
+        lblImg41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg41.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/23.jpg"))); // NOI18N
+        lblImg42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg42.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/21.jpg"))); // NOI18N
+        lblImg37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg37.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/21.jpg"))); // NOI18N
+        lblImg38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg38.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/21.jpg"))); // NOI18N
+        lblImg39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg39.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/23.jpg"))); // NOI18N
+        lblImg40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg40.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/19.jpg"))); // NOI18N
+        lblImg32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg32.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/27.jpg"))); // NOI18N
+        lblImg53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg53.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/24.jpg"))); // NOI18N
+        lblImg45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg45.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/27.jpg"))); // NOI18N
+        lblImg54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg54.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/20.jpg"))); // NOI18N
+        lblImg36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg36.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/20.jpg"))); // NOI18N
+        lblImg34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg34.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/12.jpg"))); // NOI18N
+        lblImg24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg24.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/15.jpg"))); // NOI18N
+        lblImg27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg27.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/12.jpg"))); // NOI18N
+        lblImg23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg23.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/15.jpg"))); // NOI18N
+        lblImg25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg25.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/15.jpg"))); // NOI18N
+        lblImg26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg26.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/24.jpg"))); // NOI18N
+        lblImg44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg44.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/11.jpg"))); // NOI18N
+        lblImg19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/7.jpg"))); // NOI18N
+        lblImg15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
         lblImg17.setBackground(new java.awt.Color(153, 255, 255));
-        lblImg17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/9.jpg"))); // NOI18N
+        lblImg17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/6.jpg"))); // NOI18N
+        lblImg12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/6.jpg"))); // NOI18N
+        lblImg11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/6.jpg"))); // NOI18N
+        lblImg10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/5.jpg"))); // NOI18N
+        lblImg9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/5.jpg"))); // NOI18N
+        lblImg8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/5.jpg"))); // NOI18N
+        lblImg7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/2.jpg"))); // NOI18N
+        lblImg6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/2.jpg"))); // NOI18N
+        lblImg5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/2.jpg"))); // NOI18N
+        lblImg4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/1.jpg"))); // NOI18N
+        lblImg3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/1.jpg"))); // NOI18N
+        lblImg2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
-        lblImg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/1.jpg"))); // NOI18N
+        lblImg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 2, 36)); // NOI18N
         lblTitulo.setText("Jogo da Memória");
 
-        lblImg31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/19.jpg"))); // NOI18N
+        lblImg31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg31.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 153, 153), 1, true));
 
         lblTime.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
         lblTime.setForeground(new java.awt.Color(255, 51, 51));
@@ -247,14 +301,15 @@ public class JogoMemoriaJPanelDificil extends javax.swing.JPanel {
                                         .addComponent(lblImg31, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(2, 2, 2)
                                 .addComponent(lblImg41)
+                                .addGap(4, 4, 4)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(426, 426, 426)
+                                        .addGap(422, 422, 422)
                                         .addComponent(jLabel1)
                                         .addGap(146, 146, 146)
                                         .addComponent(jLabel2))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(6, 6, 6)
+                                        .addGap(2, 2, 2)
                                         .addComponent(lblImg42)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(lblImg43)
@@ -325,7 +380,8 @@ public class JogoMemoriaJPanelDificil extends javax.swing.JPanel {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(lblImg18))))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(layout.createSequentialGroup()
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addContainerGap()
                             .addComponent(lblTitulo)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblTime, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -355,7 +411,7 @@ public class JogoMemoriaJPanelDificil extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblTitulo)
                     .addComponent(lblTime, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(23, 23, Short.MAX_VALUE)
+                .addGap(41, 41, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(lblImg9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(lblImg2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
