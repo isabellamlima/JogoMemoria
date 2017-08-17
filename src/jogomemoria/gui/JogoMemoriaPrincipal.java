@@ -45,7 +45,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         lblTempo.setText("Tempo");
 
         cmbNivel.setFont(new java.awt.Font("Times New Roman", 2, 11)); // NOI18N
-        cmbNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Fácil", "Intermediario", "Difícil" }));
+        cmbNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Fácil", "Intermediário", "Difícil" }));
         cmbNivel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbNivelActionPerformed(evt);
