@@ -7,6 +7,7 @@ package jogomemoria.gui;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+import javax.swing.ImageIcon;
 /**
  *
  * @author Aluno
@@ -27,10 +28,14 @@ List<String> caminhoImagens = Arrays.asList("1.jpg", "2.jpg", "5.jpg", "6.jpg","
      */
     @SuppressWarnings("unchecked")
 
-public String sorteioDeImagem() {
+/**public String sorteioDeImagem() {
    
    return new Random().nextInt(caminhoImagens.size());
-    }
+    }*/
+public void trocaIMG(){
+    ImageIcon novaIMG = new ImageIcon(getClass().getResource("/imagens/faca.jpg"));
+    lblImg1.setIcon(novaIMG);
+}
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -69,6 +74,11 @@ public String sorteioDeImagem() {
         lblImg2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
         lblImg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
+        lblImg1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblImg1MouseClicked(evt);
+            }
+        });
 
         lblImg5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cartavirada.jpg"))); // NOI18N
 
@@ -179,9 +189,13 @@ public String sorteioDeImagem() {
                 .addGap(0, 47, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
-public void trocaIMG(int Imagens[]){
-    ImageIcon iic = new ImageIcon(getClass().getResource("imagens/")
-}
+
+    private void lblImg1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblImg1MouseClicked
+        trocaIMG();
+       
+    }//GEN-LAST:event_lblImg1MouseClicked
+
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel lblImg1;
