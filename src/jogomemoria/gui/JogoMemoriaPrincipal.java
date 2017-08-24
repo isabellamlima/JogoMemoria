@@ -13,13 +13,15 @@ import java.awt.Component;
  */
 public class JogoMemoriaPrincipal extends javax.swing.JFrame {
 
-    private JogoMemoriaJPanelDificil jpd=new JogoMemoriaJPanelDificil();
-    private JogoMemoriaJPanelFacil jpf=new JogoMemoriaJPanelFacil();
-    private JogoMemoriaJPanelMedio jpm=new JogoMemoriaJPanelMedio();
-    
+    private JogoMemoriaJtabuleiro tb = new JogoMemoriaJtabuleiro();
+    private JogoMemoriaJPanelDificil jpd = new JogoMemoriaJPanelDificil();
+    private JogoMemoriaJPanelFacil jpf = new JogoMemoriaJPanelFacil();
+    private JogoMemoriaJPanelMedio jpm = new JogoMemoriaJPanelMedio();
+
     public JogoMemoriaPrincipal() {
         initComponents();
     }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -137,16 +139,16 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
 
     private void bntIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntIniciarActionPerformed
         String op = (String) cmbNivel.getSelectedItem();
-            if (op.equals("Fácil")) {
-                sppPrincipal.setRightComponent(jpf);
-                 this.setSize(600, 600);
-            }
-            if (((String) cmbNivel.getSelectedItem()).equals("Intermediário")) 
-                sppPrincipal.setRightComponent(jpm);
-            if (op.equals("Difícil")) 
-                sppPrincipal.setRightComponent(jpd);
-            
-            this.repaint();
+        if (op.equals("Fácil")) {
+            tb.getSPPTabuleiro().setLeftComponent(jpf);
+            this.setSize(WIDTH, WIDTH);
+        }
+        if (op.equals("Intermediário")) {
+            tb.getSPPTabuleiro().setLeftComponent(jpm);
+        }
+        if (op.equals("Difícil")) {
+            tb.getSPPTabuleiro().setLeftComponent(jpd);
+        }
     }//GEN-LAST:event_bntIniciarActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
