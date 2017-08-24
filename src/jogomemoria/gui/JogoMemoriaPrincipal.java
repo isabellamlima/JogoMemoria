@@ -141,7 +141,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         String op = (String) cmbNivel.getSelectedItem();
         if (op.equals("Fácil")) {
             tb.getSPPTabuleiro().setLeftComponent(jpf);
-            this.setSize(WIDTH, WIDTH);
+            this.setSize(500, 500);
         }
         if (op.equals("Intermediário")) {
             tb.getSPPTabuleiro().setLeftComponent(jpm);
@@ -149,6 +149,8 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         if (op.equals("Difícil")) {
             tb.getSPPTabuleiro().setLeftComponent(jpd);
         }
+        sppPrincipal.setRightComponent(tb);
+        this.repaint();
     }//GEN-LAST:event_bntIniciarActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
