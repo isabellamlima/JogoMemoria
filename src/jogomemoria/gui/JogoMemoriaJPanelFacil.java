@@ -37,19 +37,18 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
             result = img.nextInt(ter + 1) + com;
         } while (!sorteados.add(Integer.valueOf(result)));
 
-    return result;
+        return result;
     }
-@SuppressWarnings("unchecked")
 
-        public String sorteioDeImagem() {
-   
-   return new Random().nextInt(caminhoImagens.size());
-   
+    @SuppressWarnings("unchecked")
+
+    // public String sorteioDeImagem() {
+    // return new Random().nextInt(caminhoImagens.size());
+    //}
+    public void trocaIMG() {
+        ImageIcon novaIMG = new ImageIcon(getClass().getResource("/imagens/faca.jpg"));
+        lblImg1.setIcon(novaIMG);
     }
-public void trocaIMG(){
-    ImageIcon novaIMG = new ImageIcon(getClass().getResource("/imagens/faca.jpg"));
-    lblImg1.setIcon(novaIMG);
-}
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -206,9 +205,8 @@ public void trocaIMG(){
 
     private void lblImg1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblImg1MouseClicked
         trocaIMG();
-       
-    }//GEN-LAST:event_lblImg1MouseClicked
 
+    }//GEN-LAST:event_lblImg1MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -231,14 +229,5 @@ public void trocaIMG(){
     private javax.swing.JLabel lblTime;
     private javax.swing.JLabel lblTitulo;
     // End of variables declaration//GEN-END:variables
-
-    
-
-
-
-
-
-
-
 
 }

@@ -29,19 +29,7 @@ public class JogoMemoriaJtabuleiro extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jogoMemoriaJInfo2 = new jogomemoria.gui.JogoMemoriaJInfo();
         spptabuleiro = new javax.swing.JSplitPane();
-
-        javax.swing.GroupLayout jogoMemoriaJInfo2Layout = new javax.swing.GroupLayout(jogoMemoriaJInfo2);
-        jogoMemoriaJInfo2.setLayout(jogoMemoriaJInfo2Layout);
-        jogoMemoriaJInfo2Layout.setHorizontalGroup(
-            jogoMemoriaJInfo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jogoMemoriaJInfo2Layout.setVerticalGroup(
-            jogoMemoriaJInfo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
 
         setLayout(new java.awt.BorderLayout());
         add(spptabuleiro, java.awt.BorderLayout.CENTER);
@@ -51,7 +39,6 @@ public JSplitPane getSPPTabuleiro(){
 }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private jogomemoria.gui.JogoMemoriaJInfo jogoMemoriaJInfo2;
     private javax.swing.JSplitPane spptabuleiro;
     // End of variables declaration//GEN-END:variables
 }
