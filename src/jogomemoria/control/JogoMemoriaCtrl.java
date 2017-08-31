@@ -52,6 +52,7 @@ public class JogoMemoriaCtrl {
     /**
      * Construtor para a classe
      */
+    
     public JogoMemoriaCtrl() {
         jogoIniciado = false;
         tempoLimite = 0;
@@ -79,6 +80,7 @@ public class JogoMemoriaCtrl {
      * pois na tela projetamos que o usuário só consegue determinar o tempo em
      * minutos. Contudo, o temporizador será em segundos.
      */
+    
     public void iniciarPartida(int nivel, int tempoLimMinutos) {
         jogoIniciado = true;
         tempoLimMinutos = tempoLimMinutos * 60;
@@ -104,6 +106,7 @@ public class JogoMemoriaCtrl {
         
         
     }
+    
     /*Resolvidos*/
     /*ATIVIDADE #2 - Implementar a iniciação de uma partida. Pense nas variáveis
      que precisam ter seus valores ajustados no ínício de cada partida:
@@ -123,6 +126,7 @@ public class JogoMemoriaCtrl {
      * identificador de cada imagem até obter a quantidade de imagens
      * necessárias para a partida (qtdImgsPartida)
      */
+    
     private void sortearImagensPartida() {
        
         /*
@@ -154,6 +158,7 @@ public class JogoMemoriaCtrl {
      * (ZERO) em cada célula e indicando que está vazia. É usado como parte da
      * iniciação de cada partida.
      */
+    
     private void limparImgsPartida() {
         //ATIVIDADE #3.1 implementar laço para percorrer as células do vetor 
         //imgsPartida[] e atribuir o valor 0 (ZERO)  a cada célula.  
@@ -164,6 +169,7 @@ public class JogoMemoriaCtrl {
      * Preenche o tabuleiro com duplas ou trios das imagens sorteadas,
      * dependendo do nível definido para a partida.
      */
+    
     private void preencherTabuleiro() {
        
         /*
@@ -190,6 +196,7 @@ public class JogoMemoriaCtrl {
      * (ZERO) em cada célula, indicando que está vazia. É usado como parte da
      * iniciação de cada partida.
      */
+    
     private void limparTabuleiros() {
         //ATIVIDADE #4.1.
         //implementar laços para percorrer as células das matrizes 
@@ -209,6 +216,7 @@ public class JogoMemoriaCtrl {
      * @return int Inteiro representando o resultado da tentativa de jogada.
      * Refere-se a JOGADA_CERTA, JOGADA_ERRADA ou JOGADA_INVALIDA.
      */
+    
     public int realizarJogada(PecaTabuleiro pt1, PecaTabuleiro pt2) {
         int resultado = JOGADA_INVALIDA;  //O resultado inicia pessimista. Estratégia definida pelo professor.
 
@@ -232,6 +240,7 @@ public class JogoMemoriaCtrl {
          d) verifique se o jogo finalizou (acertou tudo ou terminou ot empo)
        
          */
+        
         return resultado;  //Esta linha irá retornar o resultado da operação
         // se JOGADA_CERTA, JOGADA_ERRADA ou JOGADA_INVALIDA.
         //Na tela teremos condições de fazer ela se comportar 
@@ -249,6 +258,7 @@ public class JogoMemoriaCtrl {
      * Refere-se a JOGADA_CERTA, JOGADA_ERRADA ou JOGADA_INVALIDA.
      *
      */
+    
     public int realizarJogada(PecaTabuleiro pt1, PecaTabuleiro pt2, PecaTabuleiro pt3) {
         int resultado = JOGADA_INVALIDA;  //O resultado inicia pessimista. Estratégia definida pelo professor.
 
