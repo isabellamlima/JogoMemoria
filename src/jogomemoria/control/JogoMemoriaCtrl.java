@@ -1,7 +1,6 @@
 package jogomemoria.control;
 
 import java.sql.Timestamp;
-import java.util.Random;
 import javax.swing.JOptionPane;
 import jogomemoria.model.PecaTabuleiro;
 import javax.swing.JOptionPane;
@@ -24,13 +23,14 @@ public class JogoMemoriaCtrl {
     public static final int QTDE_IMAGENS_DISPONIVEIS = 20; //Quantidade de imagens disponíveis para o jogo (Sempre maior do que MAX_PECAS_PARTIDA)
 
     public static final int QTDE_PECAS_TAB_FACIL = 16; //Referência para a qtde de peças do tabuleiro para o nível Fácil
+    public static final int QTDE_IMGS_FACIL = 8;
     public static final int MAX_COL_FACIL = 4;  //Qtde de colunas no tabuleiro para o nível Fácil
     public static final int MAX_LIN_FACIL = 4;  //Qtde de linhas no tabuleiro para o nível Fácil      
 
     public static final int QTDE_PECAS_TAB_INTERMEDIARIO = 36; //Referência para a qtde de peças do tabuleiro para o nível Intermediário
     public static final int MAX_COL_INTERMEDIARIO = 6; //Qtde de colunas no tabuleiro para o nível Intermediário
     public static final int MAX_LIN_INTERMEDIARIO = 6; //Qtde de linhas no tabuleiro para o nível Intermediário    
-
+    public static final int QTDE_IMGS_DIFICIL_INTERMEDIARIO = 18;
     public static final int QTDE_PECAS_TAB_DIFICIL = 54; //Referência para a qtde de peças do tabuleiro para o nível Difícil
     public static final int MAX_COL_DIFICIL = 9; //Qtde de colunas no tabuleiro para o nível Difícil
     public static final int MAX_LIN_DIFICIL = 6; //Qtde de linhas no tabuleiro para o nível Difícil
@@ -107,9 +107,9 @@ public class JogoMemoriaCtrl {
         sortearImagensPartida();
         limparTabuleiros();
         preencherTabuleiro();
-        
+
     }
-    
+
 
     /*ATIVIDADE #2 - Implementar a iniciação de uma partida. Pense nas variáveis
      que precisam ter seus valores ajustados no ínício de cada partida:
@@ -128,10 +128,37 @@ public class JogoMemoriaCtrl {
      * identificador de cada imagem até obter a quantidade de imagens
      * necessárias para a partida (qtdImgsPartida)
      */
+    private int obterNumSorteado(int inicio, int fim) {
+        /**
+         * Obtem um numero sorteado e valido no espaço de inicio (sendo o menor
+         * possivel 0) a fim
+         */
+        int n = INDEFINIDO;
+        if ((inicio <= fim) && (inicio >= 0)) {
+            n = inicio + (int) (Math.random() * ((fim - inicio) + 1));
+        }
+
+        return n;
+    }
+
     private void sortearImagensPartida() {
         limparImgsPartida();
         int qtdSorteadas = 0;
-        
+        boolean achou = false;
+        while (qtdSorteadas < qtdImgsPartida) {
+            int i = obterNumSorteado(1, QTDE_IMAGENS_DISPONIVEIS);
+            for (int k = 0; k < qtdSorteadas; k++) {
+                if (imgsPartida[k] == i) {
+                    achou = true;
+                    break;
+                }
+            }
+            if (!achou) {
+                imgsPartida[qtdImgsPartida] = i;
+                qtdImgsPartida++;
+            }
+        }
+
         /*
          ATIVIDADE #3.
          - Limpe o vetor de imagens da partida pois ele pode conter imagens de
@@ -175,7 +202,7 @@ public class JogoMemoriaCtrl {
      * dependendo do nível definido para a partida.
      */
     private void preencherTabuleiro() {
-        
+
 
         /*
          ATIVIDADE #4.
@@ -201,11 +228,11 @@ public class JogoMemoriaCtrl {
      * iniciação de cada partida.
      */
     private void limparTabuleiros() {
-        for(int i=0; i< MAX_LIN_DIFICIL;i++){
-            for(int o=0;i<MAX_COL_DIFICIL;o++){
-                tabuleiro[i][o]=0;
+        for (int i = 0; i < MAX_LIN_DIFICIL; i++) {
+            for (int o = 0; i < MAX_COL_DIFICIL; o++) {
+                tabuleiro[i][o] = 0;
             }
-            
+
         }
 
     }
