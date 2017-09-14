@@ -2,7 +2,9 @@ package jogomemoria.control;
 
 import java.sql.Timestamp;
 import java.util.Random;
+import javax.swing.JOptionPane;
 import jogomemoria.model.PecaTabuleiro;
+import javax.swing.JOptionPane;
 
 public class JogoMemoriaCtrl {
 
@@ -54,10 +56,10 @@ public class JogoMemoriaCtrl {
      */
     public JogoMemoriaCtrl() {
         jogoIniciado = false;
-        tempoLimite = 0;
-        acertosPartida = 0;
-        nivelAtual = 0;
-        qtdImgsPartida = 0;
+        tempoLimite = INDEFINIDO;
+        acertosPartida = INDEFINIDO;
+        nivelAtual = INDEFINIDO;
+        qtdImgsPartida = INDEFINIDO;
 
         /*Resolvido*/
  /*ATIVIDADE #1 - Implementar um construtor para esta classe. Ele deve
@@ -84,27 +86,30 @@ public class JogoMemoriaCtrl {
         tempoLimMinutos = tempoLimMinutos * 60;
         acertosPartida = 0;
 
-        if (nivelAtual == 0) {
-            nivel = FACIL;
-            qtdImgsPartida = QTDE_PECAS_TAB_FACIL;
-        }
-        if (nivelAtual == 1) {
-            nivel = INTERMEDIARIO;
-            qtdImgsPartida = QTDE_PECAS_TAB_INTERMEDIARIO;
-        }
-        if (nivelAtual == 2) {
-            nivel = DIFICIL;
-            qtdImgsPartida = QTDE_PECAS_TAB_DIFICIL;
-        }
+        if ((nivel > 0) && (nivel < 2)) {
 
-        Random sorteioImg = new Random();
-        for (int i = 0; i < MAX_IMAGENS_PARTIDA; i++) {
-            sorteioImg.nextInt();
-            int tabuleiro[][] = {{MAX_LIN_DIFICIL}, {MAX_COL_DIFICIL}};
-            int tabControle[][] = {{0}, {0}};
+            if (nivel == 0) {
+                nivelAtual = FACIL;
+                qtdImgsPartida = QTDE_PECAS_TAB_FACIL;
+            }
+            if (nivel == 1) {
+                nivelAtual = INTERMEDIARIO;
+                qtdImgsPartida = QTDE_PECAS_TAB_INTERMEDIARIO;
+            }
+            if (nivel == 2) {
+                nivelAtual = DIFICIL;
+                qtdImgsPartida = QTDE_PECAS_TAB_DIFICIL;
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Nivel selecionado errado");
+            System.exit(0);
         }
-
+        sortearImagensPartida();
+        limparTabuleiros();
+        preencherTabuleiro();
+        
     }
+    
 
     /*ATIVIDADE #2 - Implementar a iniciação de uma partida. Pense nas variáveis
      que precisam ter seus valores ajustados no ínício de cada partida:
@@ -124,7 +129,9 @@ public class JogoMemoriaCtrl {
      * necessárias para a partida (qtdImgsPartida)
      */
     private void sortearImagensPartida() {
-
+        limparImgsPartida();
+        int qtdSorteadas = 0;
+        
         /*
          ATIVIDADE #3.
          - Limpe o vetor de imagens da partida pois ele pode conter imagens de
@@ -153,9 +160,8 @@ public class JogoMemoriaCtrl {
      * (ZERO) em cada célula e indicando que está vazia. É usado como parte da
      * iniciação de cada partida.
      */
-    
     private void limparImgsPartida() {
-        for (int i = 0; i < imgsPartida.length; i++) {
+        for (int i = 0; i < MAX_IMAGENS_PARTIDA; i++) {
             imgsPartida[i] = 0;
         }
         //ATIVIDADE #3.1 implementar laço para percorrer as células do vetor 
@@ -169,6 +175,7 @@ public class JogoMemoriaCtrl {
      * dependendo do nível definido para a partida.
      */
     private void preencherTabuleiro() {
+        
 
         /*
          ATIVIDADE #4.
@@ -194,9 +201,12 @@ public class JogoMemoriaCtrl {
      * iniciação de cada partida.
      */
     private void limparTabuleiros() {
-        //ATIVIDADE #4.1.
-        //implementar laços para percorrer as células das matrizes 
-        //tabuleiro[][] e tabControle[][], atribuindo o valor 0 (ZERO)  a cada célula.
+        for(int i=0; i< MAX_LIN_DIFICIL;i++){
+            for(int o=0;i<MAX_COL_DIFICIL;o++){
+                tabuleiro[i][o]=0;
+            }
+            
+        }
 
     }
 
