@@ -60,7 +60,7 @@ public class JogoMemoriaCtrl {
         qtdImgsPartida = 0;
 
         /*Resolvido*/
-        /*ATIVIDADE #1 - Implementar um construtor para esta classe. Ele deve
+ /*ATIVIDADE #1 - Implementar um construtor para esta classe. Ele deve
          iniciar todos os atributos pertinentes, da seguinte forma:
          - O jogo deve ser sinalizado como não iniciado;
          - O tempo limite em segundos deverá ser INDEFINIDO;
@@ -106,7 +106,6 @@ public class JogoMemoriaCtrl {
 
     }
 
-    /*Resolvidos*/
     /*ATIVIDADE #2 - Implementar a iniciação de uma partida. Pense nas variáveis
      que precisam ter seus valores ajustados no ínício de cada partida:
      - O jogo deve ser sinalizado como iniciado.
@@ -154,8 +153,13 @@ public class JogoMemoriaCtrl {
      * (ZERO) em cada célula e indicando que está vazia. É usado como parte da
      * iniciação de cada partida.
      */
+    
     private void limparImgsPartida() {
+        for (int i = 0; i < imgsPartida.length; i++) {
+            imgsPartida[i] = 0;
+        }
         //ATIVIDADE #3.1 implementar laço para percorrer as células do vetor 
+        // Tentei
         //imgsPartida[] e atribuir o valor 0 (ZERO)  a cada célula.  
 
     }
