@@ -2,10 +2,95 @@ package jogomemoria.control;
 
 import java.sql.Timestamp;
 import javax.swing.JOptionPane;
-import jogomemoria.model.PecaTabuleiro;
 import javax.swing.JOptionPane;
+import jogomemoria.model.PecaTabuleiro;
+import java.util.Random;
 
 public class JogoMemoriaCtrl {
+
+    /**
+     * @return the jogoIniciado
+     */
+    public boolean isJogoIniciado() {
+        return jogoIniciado;
+    }
+
+    /**
+     * @param jogoIniciado the jogoIniciado to set
+     */
+    public void setJogoIniciado(boolean jogoIniciado) {
+        this.jogoIniciado = jogoIniciado;
+    }
+
+    /**
+     * @return the pontuacaoAtual
+     */
+    public int getPontuacaoAtual() {
+        return pontuacaoAtual;
+    }
+
+    /**
+     * @param pontuacaoAtual the pontuacaoAtual to set
+     */
+    public void setPontuacaoAtual(int pontuacaoAtual) {
+        this.pontuacaoAtual = pontuacaoAtual;
+    }
+
+    /**
+     * @return the nivelAtual
+     */
+    public int getNivelAtual() {
+        return nivelAtual;
+    }
+
+    /**
+     * @param nivelAtual the nivelAtual to set
+     */
+    public void setNivelAtual(int nivelAtual) {
+        this.nivelAtual = nivelAtual;
+    }
+
+    /**
+     * @return the tabRecordes
+     */
+    public int[][] getTabRecordes() {
+        return tabRecordes;
+    }
+
+    /**
+     * @param tabRecordes the tabRecordes to set
+     */
+    public void setTabRecordes(int[][] tabRecordes) {
+        this.tabRecordes = tabRecordes;
+    }
+
+    /**
+     * @return the acertosPartida
+     */
+    public int getAcertosPartida() {
+        return acertosPartida;
+    }
+
+    /**
+     * @param acertosPartida the acertosPartida to set
+     */
+    public void setAcertosPartida(int acertosPartida) {
+        this.acertosPartida = acertosPartida;
+    }
+
+    /**
+     * @return the tabuleiro
+     */
+    public PecaTabuleiro[][] getTabuleiro() {
+        return tabuleiro;
+    }
+
+    /**
+     * @param tabuleiro the tabuleiro to set
+     */
+    public void setTabuleiro(PecaTabuleiro[][] tabuleiro) {
+        this.tabuleiro = tabuleiro;
+    }
 
     /* ----------------------- CONSTANTES -----------------------*/
     public static final int FACIL = 0;  //Referencia ao nível Fácil 
@@ -21,7 +106,8 @@ public class JogoMemoriaCtrl {
 
     public static final int MAX_IMAGENS_PARTIDA = 18; //Máx. de imagens usadas nas partidas
     public static final int QTDE_IMAGENS_DISPONIVEIS = 20; //Quantidade de imagens disponíveis para o jogo (Sempre maior do que MAX_PECAS_PARTIDA)
-
+    public static final int QTDE_IMGS_INTERMEDIARIO = 18;
+    public static final int QTDE_IMGS_DIFICIL = 18;
     public static final int QTDE_PECAS_TAB_FACIL = 16; //Referência para a qtde de peças do tabuleiro para o nível Fácil
     public static final int QTDE_IMGS_FACIL = 8;
     public static final int MAX_COL_FACIL = 4;  //Qtde de colunas no tabuleiro para o nível Fácil
@@ -44,11 +130,13 @@ public class JogoMemoriaCtrl {
     private int tabRecordes[][] = {{0, 0, 0}, //Quadro de melhores pontuações por nível (Recordes)
     {0, 0, 0}, //Linha = Nível e Coluna = Ouro, prata ou bronze.
     {0, 0, 0}};
+    private int linhaMax;//maximo de linhas do tabuleiro
+    private int colunaMax;//maximo de colunas do tabuleiro
     private int acertosPartida;   //Quantidade de acertos na partida
     private int[] imgsPartida = new int[MAX_IMAGENS_PARTIDA];//Vetor de imagens sorteadas para a partida atual. Considera o tamanho suficiente para o nível difícil
     private int qtdImgsPartida; //Quantidade de imgens usadas na partida. Controla o uso de células do vetor imgsPartida conforme o nível da partida atual.           
-    private int tabuleiro[][] = new int[MAX_LIN_DIFICIL][MAX_COL_DIFICIL]; //Matriz que implementa o tabuleiro do jogo onde as imagens estão distribuidas. Considera o tamanho máximo possível de ser usado que é para o nível difícil. Cada célula contém um número referente à imagem que ocupará a posição.
-    private int tabControle[][] = new int[MAX_LIN_DIFICIL][MAX_COL_DIFICIL]; //Será usada em conjunto com a matriz tabuleiro[][]. Implementa um controle das jogadas já realizadas e acertadas. Ajuda a atulizar a tela indicando que imagem estará virada (Valor 0 na célula) e que imagem estará aberta (Valor 1). Considera o tamanho máximo possível de ser usado que é para o nível difícil.
+    private PecaTabuleiro tabuleiro[][] = new PecaTabuleiro[MAX_LIN_DIFICIL][MAX_COL_DIFICIL]; //Matriz que implementa o tabuleiro do jogo onde as imagens estão distribuidas. Considera o tamanho máximo possível de ser usado que é para o nível difícil. Cada célula contém um número referente à imagem que ocupará a posição.
+    private int qtdePecaPorIMG = INDEFINIDO;
 
     /* ----------------------- MÉTODOS -----------------------*/
     /**
@@ -82,31 +170,43 @@ public class JogoMemoriaCtrl {
      * minutos. Contudo, o temporizador será em segundos.
      */
     public void iniciarPartida(int nivel, int tempoLimMinutos) {
-        jogoIniciado = true;
+        setJogoIniciado(true);
         tempoLimMinutos = tempoLimMinutos * 60;
-        acertosPartida = 0;
+        setAcertosPartida(0);
 
-        if ((nivel > 0) && (nivel < 2)) {
+        if (nivel == FACIL) {
+            setNivelAtual(FACIL);
+            qtdImgsPartida = QTDE_IMGS_FACIL;
+            linhaMax = MAX_LIN_FACIL;//número máximo de linhas do tabuleiro no nivel facil
+            colunaMax = MAX_COL_FACIL;//número máximo de colunas do tabuleiro no nivel facil
 
-            if (nivel == 0) {
-                nivelAtual = FACIL;
-                qtdImgsPartida = QTDE_PECAS_TAB_FACIL;
-            }
-            if (nivel == 1) {
-                nivelAtual = INTERMEDIARIO;
-                qtdImgsPartida = QTDE_PECAS_TAB_INTERMEDIARIO;
-            }
-            if (nivel == 2) {
-                nivelAtual = DIFICIL;
-                qtdImgsPartida = QTDE_PECAS_TAB_DIFICIL;
-            }
         } else {
-            JOptionPane.showMessageDialog(null, "Nivel selecionado errado");
-            System.exit(0);
+            if (nivel == INTERMEDIARIO) {
+                setNivelAtual(INTERMEDIARIO);
+                qtdImgsPartida = QTDE_IMGS_INTERMEDIARIO;
+                linhaMax = MAX_LIN_INTERMEDIARIO;//número máximo de linhas do tabuleiro no nivel intemediario
+                colunaMax = MAX_COL_INTERMEDIARIO;//número máximo de colunas do tabuleiro no nivel intemediario
+            } else {
+                if (nivel == DIFICIL) {
+                    setNivelAtual(DIFICIL);
+                    qtdImgsPartida = QTDE_IMGS_DIFICIL;
+                    linhaMax = MAX_LIN_DIFICIL;//número máximo de linhas do tabuleiro no nivel dificil
+                    colunaMax = MAX_COL_DIFICIL;//número máximo de colunas do tabuleiro no nivel dificil
+                } else {
+                    System.out.println("ERRO"); //lança uma exeção caso não esteja no nivel certo
+                }
+            }
+        }
+        if ((getNivelAtual() == FACIL) && (getNivelAtual() == INTERMEDIARIO)) {
+            setQtdePecaPorIMG(2);
+        } else {
+            if (getNivelAtual() == DIFICIL) {
+                setQtdePecaPorIMG(3);
+            }
         }
         sortearImagensPartida();
-        limparTabuleiros();
-        preencherTabuleiro();
+        limparTabuleiro();
+        preencherTabuleiro(getNivelAtual());
 
     }
 
@@ -201,25 +301,34 @@ public class JogoMemoriaCtrl {
      * Preenche o tabuleiro com duplas ou trios das imagens sorteadas,
      * dependendo do nível definido para a partida.
      */
-    private void preencherTabuleiro() {
+    private void preencherTabuleiro(int nivel) {
+        int num = 0;
 
+        limparTabuleiro();
+        for (int i = 0; i < qtdImgsPartida; i++) {
+            for (int j = 0; j < qtdePecaPorIMG; j++) {
+                PecaTabuleiro p = new PecaTabuleiro();
+                num++;
+                p.setNumero(num);
+                p.setIdImagem(imgsPartida[i]);
+                p.setVirado(false);
+                int l, c = 0;
+                boolean sucesso = false;
+                while (!sucesso) {
+                    l = obterNumSorteado(0, linhaMax);
+                    c = obterNumSorteado(0, colunaMax);
+                    if (getTabuleiro()[l][c] == null) {
+                        p.setLinha(l);
+                        p.setColuna(c);
+                        getTabuleiro()[l][c] = p;
+                        sucesso = true;
 
-        /*
-         ATIVIDADE #4.
-         - Limpe o tabuleiro da partida pois ele pode conter dados de
-         partidas anteriores.
-         - Para cada imagem sorteada para a partida e registrada em imgsPartida 
-         tente inserir duplas ou trios, conforme o nível de partida atual (FÁCIL, 
-         INTERM. ou DIFÍCIL).
-         - Sendo assim, Para cada item do vetor imgsPartida[] sorteie uma posição (linha e coluna) 
-         dentro do limite de tamanho do tabuleiro[], conforme o nível da partida.
-         - Verifique se a posição sorteada tem valor 0 no tabuleiro. Se tiver, atribua o identificador
-         da imagem nesta posição. Caso o valor da célula seja diferente de 0 sorteie
-         novamente até encontrar uma célula com valor 0.
-         - Você deve controlar, usando uma variável, qual elemento do vetor imgsPartida[]
-         você está processando. Ou seja você deve processa do primeiro até o último elemento.
- 
-         */
+                    }
+                }
+
+            }
+
+        }
     }
 
     /**
@@ -227,10 +336,10 @@ public class JogoMemoriaCtrl {
      * (ZERO) em cada célula, indicando que está vazia. É usado como parte da
      * iniciação de cada partida.
      */
-    private void limparTabuleiros() {
+    private void limparTabuleiro() {
         for (int i = 0; i < MAX_LIN_DIFICIL; i++) {
             for (int o = 0; i < MAX_COL_DIFICIL; o++) {
-                tabuleiro[i][o] = 0;
+                getTabuleiro()[i][o] = null;
             }
 
         }
@@ -272,8 +381,24 @@ public class JogoMemoriaCtrl {
          d) verifique se o jogo finalizou (acertou tudo ou terminou ot empo)
        
          */
-        return resultado;  //Esta linha irá retornar o resultado da operação
-        // se JOGADA_CERTA, JOGADA_ERRADA ou JOGADA_INVALIDA.
+        //VER O ERRO
+        //O resultado inicia pessimista. Estratégia definida pelo professor.
+        if (pt1.getIdImagem() == pt2.getIdImagem()) {
+            if ((pt1.getLinha() <= linhaMax) && (pt1.getColuna() <= colunaMax)
+                    && (pt2.getLinha() <= linhaMax) && (pt2.getColuna() <= colunaMax)) {//Verifica se as peças pt1 e pt2 possuem linha e coluna dentro do limites do tabuleiro.
+                //int vrControle1 = tabControle[pt1.getLinha()][pt1.getColuna()];//testa se os valores de linha e coluna estão dentro dos limites.
+                //int vrControle2 = tabControle[pt2.getLinha()][pt2.getColuna()];//testa se os valores de linha e coluna estão dentro dos limites.
+                if ((!pt1.isVirado()) && (!pt2.isVirado())) {//verifica se se ambos pussuem o valor 0
+                    resultado = JOGADA_CERTA;
+                    setPontuacaoAtual(getPontuacaoAtual() + 1);
+                    pt1.setVirado(true);//atualiza o valor de como virada para 1
+                    pt2.setVirado(true);//atualiza o valor de como virada para 1
+                } else {
+                    resultado = JOGADA_ERRADA;//caso ocorra erro na jogada
+                }
+            }
+        }
+        return resultado;  //Esta linha irá retornar o resultado da operação        // se JOGADA_CERTA, JOGADA_ERRADA ou JOGADA_INVALIDA.
         //Na tela teremos condições de fazer ela se comportar 
         //em função do valor que este método retornar. 
     }
@@ -290,13 +415,41 @@ public class JogoMemoriaCtrl {
      *
      */
     public int realizarJogada(PecaTabuleiro pt1, PecaTabuleiro pt2, PecaTabuleiro pt3) {
-        int resultado = JOGADA_INVALIDA;  //O resultado inicia pessimista. Estratégia definida pelo professor.
-
-        /*
-         ATIVIDADE #6. Implemente este método de forma semelhante ao da 
-         atividade nº 5 mas para o caso de 3 peças.
-         */
+        int resultado = JOGADA_ERRADA;  //O resultado inicia pessimista. Estratégia definida pelo professor.
+        if (pt1.getIdImagem() == pt2.getIdImagem()) {
+            if (pt1.getIdImagem() == pt3.getIdImagem()) {
+                if ((pt1.getLinha() <= linhaMax) && (pt1.getColuna() <= colunaMax)
+                        && (pt2.getLinha() <= linhaMax) && (pt2.getColuna() <= colunaMax)
+                        && (pt3.getLinha() <= linhaMax) && (pt3.getColuna() <= colunaMax)) {//Verifica se as peças pt1 e pt2 possuem linha e coluna dentro do limites do tabuleiro.
+                    // int vrControle1 = tabControle[pt1.getLinha()][pt1.getColuna()];//testa se os valores de linha e coluna estão dentro dos limites.
+                    //int vrControle2 = tabControle[pt2.getLinha()][pt2.getColuna()];//testa se os valores de linha e coluna estão dentro dos limites.
+                    //int vrControle3 = tabControle[pt3.getLinha()][pt3.getColuna()];//testa se os valores de linha e coluna estão dentro dos limites.
+                    if ((!pt1.isVirado()) && (!pt2.isVirado()) && (!pt3.isVirado())) {//verifica se se ambos pussuem o valor 0
+                        resultado = JOGADA_CERTA;
+                        setPontuacaoAtual(getPontuacaoAtual() + 1);
+                        pt1.setVirado(true);//atualiza o valor de como virada para 1
+                        pt2.setVirado(true);//atualiza o valor de como virada para 1
+                        pt3.setVirado(true);
+                    } else {
+                        resultado = JOGADA_INVALIDA;
+                    }
+                }
+            }
+        }
         return resultado;
     }
 
+    /**
+     * @return the qtdePecaPorIMG
+     */
+    public int getQtdePecaPorIMG() {
+        return qtdePecaPorIMG;
+    }
+
+    /**
+     * @param qtdePecaPorIMG the qtdePecaPorIMG to set
+     */
+    public void setQtdePecaPorIMG(int qtdePecaPorIMG) {
+        this.qtdePecaPorIMG = qtdePecaPorIMG;
+    }
 }

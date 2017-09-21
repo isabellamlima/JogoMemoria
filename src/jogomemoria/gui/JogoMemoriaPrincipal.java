@@ -6,6 +6,7 @@
 package jogomemoria.gui;
 
 import java.awt.Component;
+import jogomemoria.control.JogoMemoriaCtrl;
 
 /**
  *
@@ -17,7 +18,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     private JogoMemoriaJPanelDificil jpd = new JogoMemoriaJPanelDificil();
     private JogoMemoriaJPanelFacil jpf = new JogoMemoriaJPanelFacil();
     private JogoMemoriaJPanelMedio jpm = new JogoMemoriaJPanelMedio();
-
+    JogoMemoriaCtrl controle = new JogoMemoriaCtrl();
     public JogoMemoriaPrincipal() {
         initComponents();
     }
@@ -51,11 +52,21 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
 
         cmbNivel.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         cmbNivel.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Fácil", "Intermediário", "Difícil" }));
+        cmbNivel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbNivelActionPerformed(evt);
+            }
+        });
 
         cgTempo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
 
         bntIniciar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         bntIniciar.setText("Iniciar");
+        bntIniciar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bntIniciarMouseClicked(evt);
+            }
+        });
         bntIniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bntIniciarActionPerformed(evt);
@@ -104,7 +115,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
                         .addComponent(lblNivel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(cmbNivel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         sppPrincipal.setLeftComponent(pnlPrincipal);
@@ -118,16 +129,16 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         pnlPrincipal2Layout.setHorizontalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlPrincipal2Layout.createSequentialGroup()
-                .addGap(174, 174, 174)
+                .addGap(144, 144, 144)
                 .addComponent(lblImage)
-                .addContainerGap(221, Short.MAX_VALUE))
+                .addContainerGap(251, Short.MAX_VALUE))
         );
         pnlPrincipal2Layout.setVerticalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPrincipal2Layout.createSequentialGroup()
-                .addContainerGap(35, Short.MAX_VALUE)
+            .addGroup(pnlPrincipal2Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
                 .addComponent(lblImage)
-                .addGap(19, 19, 19))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         sppPrincipal.setRightComponent(pnlPrincipal2);
@@ -156,6 +167,16 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void bntIniciarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bntIniciarMouseClicked
+        int nivelS = Integer.parseInt((String)cmbNivel.getSelectedItem());
+        int tempoL = ((int)cgTempo.getComponentCount());
+        controle.iniciarPartida(nivelS, tempoL);
+    }//GEN-LAST:event_bntIniciarMouseClicked
+
+    private void cmbNivelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbNivelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbNivelActionPerformed
 
     /**
      * @param args the command line arguments
