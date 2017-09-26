@@ -7,7 +7,7 @@ public class PecaTabuleiro {
     private int linha;//linha do tabuleiro
     private int coluna;//linha da coluna
     private boolean virado;
-    
+
     public int getNumero() {
         return numero;
     }

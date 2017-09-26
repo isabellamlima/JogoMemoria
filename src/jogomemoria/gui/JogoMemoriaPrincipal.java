@@ -19,6 +19,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     private JogoMemoriaJPanelFacil jpf = new JogoMemoriaJPanelFacil();
     private JogoMemoriaJPanelMedio jpm = new JogoMemoriaJPanelMedio();
     JogoMemoriaCtrl controle = new JogoMemoriaCtrl();
+
     public JogoMemoriaPrincipal() {
         initComponents();
     }
@@ -122,23 +123,23 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
 
         pnlPrincipal2.setBackground(new java.awt.Color(0, 255, 255));
 
-        lblImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/capa.jpg"))); // NOI18N
+        lblImage.setText("jLabel1");
 
         javax.swing.GroupLayout pnlPrincipal2Layout = new javax.swing.GroupLayout(pnlPrincipal2);
         pnlPrincipal2.setLayout(pnlPrincipal2Layout);
         pnlPrincipal2Layout.setHorizontalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlPrincipal2Layout.createSequentialGroup()
-                .addGap(144, 144, 144)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPrincipal2Layout.createSequentialGroup()
+                .addContainerGap(444, Short.MAX_VALUE)
                 .addComponent(lblImage)
-                .addContainerGap(251, Short.MAX_VALUE))
+                .addGap(435, 435, 435))
         );
         pnlPrincipal2Layout.setVerticalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlPrincipal2Layout.createSequentialGroup()
-                .addGap(39, 39, 39)
+                .addGap(160, 160, 160)
                 .addComponent(lblImage)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(195, Short.MAX_VALUE))
         );
 
         sppPrincipal.setRightComponent(pnlPrincipal2);
@@ -169,8 +170,11 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void bntIniciarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bntIniciarMouseClicked
-        int nivelS = Integer.parseInt((String)cmbNivel.getSelectedItem());
-        int tempoL = ((int)cgTempo.getComponentCount());
+        int nivelS = Integer.parseInt((String) cmbNivel.getSelectedItem());
+
+        int tempoL = (((Integer) cgTempo.getValue()).intValue());
+
+        //int tempoL = ((int)cgTempo.getComponentCount());
         controle.iniciarPartida(nivelS, tempoL);
     }//GEN-LAST:event_bntIniciarMouseClicked
 
