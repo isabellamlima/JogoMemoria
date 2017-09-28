@@ -101,7 +101,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
                 .addGroup(pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(bntIniciar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(573, Short.MAX_VALUE))
+                .addContainerGap(487, Short.MAX_VALUE))
         );
         pnlPrincipalLayout.setVerticalGroup(
             pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,23 +123,23 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
 
         pnlPrincipal2.setBackground(new java.awt.Color(0, 255, 255));
 
-        lblImage.setText("jLabel1");
+        lblImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/capa.jpg"))); // NOI18N
 
         javax.swing.GroupLayout pnlPrincipal2Layout = new javax.swing.GroupLayout(pnlPrincipal2);
         pnlPrincipal2.setLayout(pnlPrincipal2Layout);
         pnlPrincipal2Layout.setHorizontalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPrincipal2Layout.createSequentialGroup()
-                .addContainerGap(444, Short.MAX_VALUE)
+                .addContainerGap(158, Short.MAX_VALUE)
                 .addComponent(lblImage)
-                .addGap(435, 435, 435))
+                .addGap(151, 151, 151))
         );
         pnlPrincipal2Layout.setVerticalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlPrincipal2Layout.createSequentialGroup()
-                .addGap(160, 160, 160)
+                .addGap(42, 42, 42)
                 .addComponent(lblImage)
-                .addContainerGap(195, Short.MAX_VALUE))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         sppPrincipal.setRightComponent(pnlPrincipal2);
