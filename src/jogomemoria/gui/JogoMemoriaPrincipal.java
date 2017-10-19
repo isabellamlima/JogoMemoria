@@ -5,8 +5,12 @@
  */
 package jogomemoria.gui;
 
+
 import java.awt.Component;
+import javax.swing.ImageIcon;
 import jogomemoria.control.JogoMemoriaCtrl;
+import jogomemoria.model.PecaTabuleiro;
+
 
 /**
  *
@@ -17,11 +21,12 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     private JogoMemoriaJtabuleiro tb = new JogoMemoriaJtabuleiro();
     private JogoMemoriaJPanelDificil jpd = new JogoMemoriaJPanelDificil();
     private JogoMemoriaJPanelFacil jpf = new JogoMemoriaJPanelFacil();
-    private JogoMemoriaJPanelMedio jpm = new JogoMemoriaJPanelMedio();
-    JogoMemoriaCtrl controle = new JogoMemoriaCtrl();
+    private JogoMemoriaJPanelIntermediario jpi = new JogoMemoriaJPanelIntermediario();
+    private JogoMemoriaCtrl controle;
 
     public JogoMemoriaPrincipal() {
         initComponents();
+        controle = new JogoMemoriaCtrl();
     }
 
     @SuppressWarnings("unchecked")
@@ -101,7 +106,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
                 .addGroup(pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(bntIniciar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(487, Short.MAX_VALUE))
+                .addContainerGap(491, Short.MAX_VALUE))
         );
         pnlPrincipalLayout.setVerticalGroup(
             pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -116,7 +121,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
                         .addComponent(lblNivel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(cmbNivel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         sppPrincipal.setLeftComponent(pnlPrincipal);
@@ -129,17 +134,17 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         pnlPrincipal2.setLayout(pnlPrincipal2Layout);
         pnlPrincipal2Layout.setHorizontalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPrincipal2Layout.createSequentialGroup()
-                .addContainerGap(158, Short.MAX_VALUE)
+            .addGroup(pnlPrincipal2Layout.createSequentialGroup()
+                .addGap(155, 155, 155)
                 .addComponent(lblImage)
-                .addGap(151, 151, 151))
+                .addContainerGap(158, Short.MAX_VALUE))
         );
         pnlPrincipal2Layout.setVerticalGroup(
             pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlPrincipal2Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
+                .addGap(19, 19, 19)
                 .addComponent(lblImage)
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         sppPrincipal.setRightComponent(pnlPrincipal2);
@@ -150,19 +155,24 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bntIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntIniciarActionPerformed
+        int nivelS = 0;
         String op = (String) cmbNivel.getSelectedItem();
         if (op.equals("Fácil")) {
-            tb.getSPPTabuleiro().setLeftComponent(jpf);
-            this.setSize(500, 500);
+            nivelS = controle.FACIL;
+            
         }
         if (op.equals("Intermediário")) {
-            tb.getSPPTabuleiro().setLeftComponent(jpm);
+            nivelS = controle.INTERMEDIARIO;
         }
         if (op.equals("Difícil")) {
-            tb.getSPPTabuleiro().setLeftComponent(jpd);
+            nivelS = controle.DIFICIL;
         }
+        int tempoL =(((Integer)cgTempo.getValue()).intValue());
         sppPrincipal.setRightComponent(tb);
         this.repaint();
+        controle.iniciarPartida(nivelS, tempoL);
+        mostrarTabuleiro(true);
+        
     }//GEN-LAST:event_bntIniciarActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -216,6 +226,9 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
             }
         });
     }
+    
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bntIniciar;
@@ -229,4 +242,38 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel pnlPrincipal2;
     private javax.swing.JSplitPane sppPrincipal;
     // End of variables declaration//GEN-END:variables
+    
+    public void mostrarTabuleiro(boolean inicioJogo){
+        int nivelA = controle.getNivelAtual();
+        PecaTabuleiro pctb[][] = controle.getTabuleiro();
+        int idImg = 0;
+        ImageIcon imgDuvida = new ImageIcon (getClass().getResource("/jogomemoria/gui/imagens/cartavirada.jpg"));             
+        
+        
+        
+        if (controle.FACIL == nivelA){
+            //tb.getSPPTabuleiro().setLeftComponent(jpf);
+            if(inicioJogo || pctb[0][0].isVirado()){
+                idImg = pctb[0][0].getIdImagem();
+                ImageIcon img01 = new ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/JM"+idImg+".jpg"));
+            }else{
+                (jpf.getLblImg1()).setIcon(imgDuvida);
+            }
+            
+        }
+        if (controle.INTERMEDIARIO == nivelA) {
+            tb.getSPPTabuleiro().setLeftComponent(jpi);
+
+        }
+        if (controle.DIFICIL == nivelA) {
+            tb.getSPPTabuleiro().setLeftComponent(jpd);
+
+        }
+        
+    }
+
+
+
+
+
 }
