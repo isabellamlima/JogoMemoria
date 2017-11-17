@@ -43,20 +43,20 @@
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="lblImg10" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblImg1" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblImg19" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblImg28" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblImg37" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblImg46" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblImg00" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblImg20" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblImg30" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblImg40" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblImg50" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="lblImg2" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblImg01" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="lblImg3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblImg02" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="lblImg4" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblImg03" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Component id="lblImg11" min="-2" max="-2" attributes="0"/>
@@ -66,107 +66,97 @@
                               <Component id="lblImg13" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="lblImg20" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="lblImg21" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="lblImg22" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lblImg23" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="lblImg29" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblImg31" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblImg30" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblImg32" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
-                                      <Component id="lblImg38" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblImg41" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblImg39" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblImg42" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="lblImg31" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblImg40" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblImg33" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblImg43" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" attributes="0">
-                              <Component id="lblImg47" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblImg51" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="lblImg48" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblImg52" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="lblImg49" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblImg53" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="lblImg32" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblImg33" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="lblImg23" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblImg24" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="lblImg25" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblImg26" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="lblImg27" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="lblImg34" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblImg35" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblImg36" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
                           <Group type="102" attributes="0">
-                              <Component id="lblImg41" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="lblImg42" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="lblImg43" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="lblImg44" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="lblImg45" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="lblImg50" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="lblImg51" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="lblImg52" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="lblImg53" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="lblImg54" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lblImg55" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lblImg56" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="18" max="32767" attributes="0"/>
+                              <Component id="lblImg57" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="lbImgl5" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblImg44" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblImg6" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblImg45" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblImg7" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblImg46" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="lblImg47" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="lblImg34" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="lblImg35" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="lblImg24" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="lblImg25" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="lblImg26" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="lblImg27" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="lblImg36" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="lblImg37" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="lblImg04" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="lblImg05" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="lblImg06" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                      <Component id="lblImg8" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblImg9" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblImg07" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="lblImg14" min="-2" max="-2" attributes="0"/>
@@ -176,8 +166,6 @@
                                       <Component id="lblImg16" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="lblImg17" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblImg18" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -204,15 +192,14 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblImg1" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg2" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg4" min="-2" max="-2" attributes="0"/>
-                  <Component id="lbImgl5" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg6" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg7" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg8" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg9" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg00" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg01" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg02" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg03" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg04" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg05" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg06" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg07" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -224,11 +211,9 @@
                   <Component id="lblImg15" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg16" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg17" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg18" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblImg19" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg20" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg21" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg22" min="-2" max="-2" attributes="0"/>
@@ -240,39 +225,36 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblImg28" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg29" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg30" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg31" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg33" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg34" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg35" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg32" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg33" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg35" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg36" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg37" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg34" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblImg37" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg38" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg39" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg40" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg41" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg42" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg43" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg44" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg45" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg46" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg47" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblImg46" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg47" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg48" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg49" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg50" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg51" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg52" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblImg54" min="-2" max="-2" attributes="0"/>
                   <Component id="lblImg53" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg54" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg55" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg56" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblImg57" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="22" max="32767" attributes="0"/>
           </Group>
@@ -299,14 +281,14 @@
         <Property name="text" type="java.lang.String" value="Last Time"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg1">
+    <Component class="javax.swing.JLabel" name="lblImg00">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg4">
+    <Component class="javax.swing.JLabel" name="lblImg03">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
@@ -320,7 +302,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg2">
+    <Component class="javax.swing.JLabel" name="lblImg01">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
@@ -334,7 +316,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg22">
+    <Component class="javax.swing.JLabel" name="lblImg23">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
@@ -355,49 +337,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg6">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblImg20">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblImg14">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblImg3">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblImg11">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lbImgl5">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblImg19">
+    <Component class="javax.swing.JLabel" name="lblImg05">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
@@ -411,91 +351,42 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg18">
+    <Component class="javax.swing.JLabel" name="lblImg14">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg27">
+    <Component class="javax.swing.JLabel" name="lblImg02">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg28">
+    <Component class="javax.swing.JLabel" name="lblImg11">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg26">
+    <Component class="javax.swing.JLabel" name="lblImg04">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg29">
+    <Component class="javax.swing.JLabel" name="lblImg20">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg7">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblImg24">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblImg25">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblImg23">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblImg8">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblImg16">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblImg9">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblImg17">
+    <Component class="javax.swing.JLabel" name="lblImg22">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
@@ -509,7 +400,63 @@
         </Property>
       </Properties>
     </Component>
+    <Component class="javax.swing.JLabel" name="lblImg27">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
+        </Property>
+      </Properties>
+    </Component>
     <Component class="javax.swing.JLabel" name="lblImg31">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblImg06">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblImg25">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblImg26">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblImg24">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblImg07">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblImg16">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblImg17">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
@@ -544,13 +491,6 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg37">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JLabel" name="lblImg36">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -558,14 +498,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg38">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblImg39">
+    <Component class="javax.swing.JLabel" name="lblImg37">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
@@ -628,20 +561,6 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg48">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lblImg49">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
-        </Property>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JLabel" name="lblImg50">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -663,6 +582,13 @@
         </Property>
       </Properties>
     </Component>
+    <Component class="javax.swing.JLabel" name="lblImg53">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
+        </Property>
+      </Properties>
+    </Component>
     <Component class="javax.swing.JLabel" name="lblImg54">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -670,7 +596,21 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblImg53">
+    <Component class="javax.swing.JLabel" name="lblImg55">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblImg56">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblImg57">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
