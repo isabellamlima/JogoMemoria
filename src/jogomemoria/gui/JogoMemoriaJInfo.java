@@ -32,27 +32,23 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
         lblMedalhaOuro = new javax.swing.JLabel();
         lblMedalhaPrata = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         lblMedalhaOuro2 = new javax.swing.JLabel();
         lblMedalhaPrata2 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         lblMedalhaOuro1 = new javax.swing.JLabel();
         lblMedalhaPrata1 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        lblPontuaçãoOuro2 = new javax.swing.JLabel();
-        lblPontuaçãoPrata2 = new javax.swing.JLabel();
-        lblPontuaçãoPrata1 = new javax.swing.JLabel();
-        lblPontuaçãoOuro1 = new javax.swing.JLabel();
-        lblPontuaçãoOuro = new javax.swing.JLabel();
-        lblPontuaçãoPrata = new javax.swing.JLabel();
-        lblPontuaçãoBronze2 = new javax.swing.JLabel();
         lblMedalhaBronze = new javax.swing.JLabel();
-        lblPontuaçãoBronze = new javax.swing.JLabel();
         lblMedalhaBronze2 = new javax.swing.JLabel();
-        lblPontuaçãoBronze1 = new javax.swing.JLabel();
         lblMedalhaBronze1 = new javax.swing.JLabel();
+        LblOuro = new javax.swing.JLabel();
+        LblPrata = new javax.swing.JLabel();
+        LblBronze = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         jLabel16.setText("jLabel16");
 
@@ -66,17 +62,11 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/MedalhaBronzwe.png"))); // NOI18N
 
-        jLabel5.setText("Fácil");
-
-        jLabel6.setText("Difícil");
-
         lblMedalhaOuro2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/MedalhaOuro.png"))); // NOI18N
 
         lblMedalhaPrata2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/MedalhaPrata.png"))); // NOI18N
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/MedalhaBronzwe.png"))); // NOI18N
-
-        jLabel10.setText("Intermediário");
 
         lblMedalhaOuro1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/MedalhaOuro.png"))); // NOI18N
 
@@ -84,29 +74,28 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/MedalhaBronzwe.png"))); // NOI18N
 
-        lblPontuaçãoOuro2.setText("Pontos");
-
-        lblPontuaçãoPrata2.setText("Pontos");
-
-        lblPontuaçãoPrata1.setText("Pontos");
-
-        lblPontuaçãoOuro1.setText("Pontos");
-
-        lblPontuaçãoOuro.setText("Pontos");
-
-        lblPontuaçãoPrata.setText("Pontos");
-
-        lblPontuaçãoBronze2.setText("Pontos");
-
         lblMedalhaBronze.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/MedalhaBronze.png"))); // NOI18N
-
-        lblPontuaçãoBronze.setText("Pontos");
 
         lblMedalhaBronze2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/MedalhaBronze.png"))); // NOI18N
 
-        lblPontuaçãoBronze1.setText("Pontos");
-
         lblMedalhaBronze1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/MedalhaBronze.png"))); // NOI18N
+
+        LblOuro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/MedalhaOuro.jpg"))); // NOI18N
+
+        LblPrata.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/MedalhaPrata.jpg"))); // NOI18N
+
+        LblBronze.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/MedalhaBronze.jpg"))); // NOI18N
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel2.setText("Pontos da Jogada");
+
+        jLabel3.setText("jLabel3");
+
+        jLabel5.setText("jLabel5");
+
+        jLabel6.setText("jLabel6");
+
+        jLabel7.setText("jLabel7");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -116,59 +105,52 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblMedalhaOuro)
-                        .addGap(5, 5, 5)
-                        .addComponent(lblPontuaçãoOuro))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel13))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblMedalhaPrata)
-                        .addGap(5, 5, 5)
-                        .addComponent(lblPontuaçãoPrata))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblMedalhaBronze, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblPontuaçãoBronze))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(jLabel5)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
-                .addComponent(jLabel13)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblMedalhaOuro)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(lblMedalhaBronze, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(18, 18, 18)
+                                        .addComponent(LblBronze))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel2))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblMedalhaPrata)
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(LblOuro)
+                                    .addComponent(LblPrata))))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel10)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblMedalhaPrata1)
-                            .addComponent(lblMedalhaOuro1, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(5, 5, 5)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lblMedalhaPrata1)
+                                .addComponent(lblMedalhaOuro1, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addComponent(lblMedalhaBronze1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(80, 80, 80)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblPontuaçãoOuro1)
-                            .addComponent(lblPontuaçãoPrata1)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblMedalhaBronze1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblPontuaçãoBronze1)))
-                .addGap(41, 41, 41)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel9)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblMedalhaBronze2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblPontuaçãoBronze2))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel9)
+                            .addComponent(lblMedalhaBronze2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblMedalhaPrata2)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblPontuaçãoPrata2))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(lblMedalhaOuro2)
-                            .addGap(5, 5, 5)
-                            .addComponent(lblPontuaçãoOuro2)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(jLabel6)))
-                .addContainerGap())
+                            .addComponent(lblMedalhaOuro2))
+                        .addGap(49, 49, 49))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel7))
+                        .addGap(100, 100, 100))))
             .addGroup(layout.createSequentialGroup()
                 .addGap(80, 80, 80)
                 .addComponent(jLabel1)
@@ -179,85 +161,84 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(LblOuro))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addComponent(jLabel3)))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblMedalhaOuro)
+                        .addGap(32, 32, 32)
+                        .addComponent(lblMedalhaPrata)
+                        .addGap(14, 14, 14)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblMedalhaOuro)
-                            .addComponent(lblPontuaçãoOuro))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblMedalhaPrata)
-                            .addComponent(lblPontuaçãoPrata))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblMedalhaBronze)
                                 .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lblMedalhaBronze)
-                                        .addGap(0, 0, Short.MAX_VALUE))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(36, 36, 36)
-                                .addComponent(lblPontuaçãoBronze)
+                                .addComponent(LblBronze)
+                                .addGap(26, 26, 26)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel7))
                                 .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblMedalhaOuro1)
-                                    .addComponent(lblPontuaçãoOuro1))
+                                .addComponent(lblMedalhaOuro1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(lblPontuaçãoPrata1, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblMedalhaPrata1)))
+                                .addComponent(lblMedalhaPrata1))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblMedalhaOuro2)
-                                    .addComponent(lblPontuaçãoOuro2))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblMedalhaPrata2)
-                                    .addComponent(lblPontuaçãoPrata2))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(lblMedalhaOuro2)
+                                        .addGap(32, 32, 32))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(jLabel5)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                                .addComponent(lblMedalhaPrata2)
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblMedalhaBronze2)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblMedalhaBronze1)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(16, 16, 16)
-                                        .addComponent(lblPontuaçãoBronze2))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(18, 18, 18)
-                                        .addComponent(lblPontuaçãoBronze1)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblMedalhaBronze1)
+                                .addGap(32, 32, 32)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(116, 116, 116)
                                         .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(40, 40, 40)
-                                        .addComponent(jLabel13)))))
-                        .addContainerGap())))
+                                        .addComponent(jLabel13))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(31, 31, 31)
+                                .addComponent(jLabel6)))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(LblPrata)
+                        .addGap(191, 191, 191))))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel LblBronze;
+    private javax.swing.JLabel LblOuro;
+    private javax.swing.JLabel LblPrata;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel lblMedalhaBronze;
     private javax.swing.JLabel lblMedalhaBronze1;
@@ -268,14 +249,5 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
     private javax.swing.JLabel lblMedalhaPrata;
     private javax.swing.JLabel lblMedalhaPrata1;
     private javax.swing.JLabel lblMedalhaPrata2;
-    private javax.swing.JLabel lblPontuaçãoBronze;
-    private javax.swing.JLabel lblPontuaçãoBronze1;
-    private javax.swing.JLabel lblPontuaçãoBronze2;
-    private javax.swing.JLabel lblPontuaçãoOuro;
-    private javax.swing.JLabel lblPontuaçãoOuro1;
-    private javax.swing.JLabel lblPontuaçãoOuro2;
-    private javax.swing.JLabel lblPontuaçãoPrata;
-    private javax.swing.JLabel lblPontuaçãoPrata1;
-    private javax.swing.JLabel lblPontuaçãoPrata2;
     // End of variables declaration//GEN-END:variables
 }

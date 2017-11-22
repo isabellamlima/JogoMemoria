@@ -29,21 +29,35 @@ public class JogoMemoriaJtabuleiro extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        spptabuleiro = new javax.swing.JSplitPane();
-        jogoMemoriaJPanelFacil1 = new jogomemoria.gui.JogoMemoriaJPanelFacil();
+        sppTabuleiro = new javax.swing.JSplitPane();
 
-        setLayout(new java.awt.BorderLayout());
+        sppTabuleiro.setDividerLocation(-1);
+        sppTabuleiro.setLastDividerLocation(0);
+        sppTabuleiro.setMinimumSize(new java.awt.Dimension(500, 25));
 
-        spptabuleiro.setRightComponent(jogoMemoriaJPanelFacil1);
-
-        add(spptabuleiro, java.awt.BorderLayout.CENTER);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(84, 84, 84)
+                .addComponent(sppTabuleiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(122, 122, 122)
+                .addComponent(sppTabuleiro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
     }// </editor-fold>//GEN-END:initComponents
-public JSplitPane getSPPTabuleiro(){
-    return spptabuleiro;
-}
+
+    public JSplitPane getsppTabuleiro(){
+        return sppTabuleiro;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private jogomemoria.gui.JogoMemoriaJPanelFacil jogoMemoriaJPanelFacil1;
-    private javax.swing.JSplitPane spptabuleiro;
+    private javax.swing.JSplitPane sppTabuleiro;
     // End of variables declaration//GEN-END:variables
 }

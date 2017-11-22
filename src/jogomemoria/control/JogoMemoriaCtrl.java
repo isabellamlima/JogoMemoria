@@ -91,22 +91,22 @@ public class JogoMemoriaCtrl {
         if (nivel == FACIL) {
             setNivelAtual(FACIL);
             qtdImgsPartida = QTDE_IMGS_FACIL;
-            linhaMax = MAX_LIN_FACIL;//número máximo de linhas do tabuleiro no nivel facil
-            colunaMax = MAX_COL_FACIL;//número máximo de colunas do tabuleiro no nivel facil
+            linhaMax = MAX_LIN_FACIL-1;//número máximo de linhas do tabuleiro no nivel facil
+            colunaMax = MAX_COL_FACIL-1;//número máximo de colunas do tabuleiro no nivel facil
             qtdePecasPorImg = 2;
         } else {
             if (nivel == INTERMEDIARIO) {
                 setNivelAtual(INTERMEDIARIO);
                 qtdImgsPartida = QTDE_IMGS_INTERMEDIARIO;
-                linhaMax = MAX_LIN_INTERMEDIARIO;//número máximo de linhas do tabuleiro no nivel intemediario
-                colunaMax = MAX_COL_INTERMEDIARIO;//número máximo de colunas do tabuleiro no nivel intemediario
+                linhaMax = MAX_LIN_INTERMEDIARIO-1;//número máximo de linhas do tabuleiro no nivel intemediario
+                colunaMax = MAX_COL_INTERMEDIARIO-1;//número máximo de colunas do tabuleiro no nivel intemediario
                 qtdePecasPorImg = 2;               
             } else {
                 if (nivel == DIFICIL) {
                     setNivelAtual(DIFICIL);
                     qtdImgsPartida = QTDE_IMGS_DIFICIL;
-                    linhaMax = MAX_LIN_DIFICIL;//número máximo de linhas do tabuleiro no nivel dificil
-                    colunaMax = MAX_COL_DIFICIL;//número máximo de colunas do tabuleiro no nivel dificil
+                    linhaMax = MAX_LIN_DIFICIL-1;//número máximo de linhas do tabuleiro no nivel dificil
+                    colunaMax = MAX_COL_DIFICIL-1;//número máximo de colunas do tabuleiro no nivel dificil
                     qtdePecasPorImg = 3;
                 } else {
                     System.out.println("ERRO"); //lança uma exeção caso não esteja no nivel certo
@@ -240,9 +240,9 @@ public class JogoMemoriaCtrl {
                 int c;
                 boolean sucesso = false;
                 while (!sucesso) {
-                    l = obterNumSorteado(0, linhaMax-1);
-                    c = obterNumSorteado(0, colunaMax-1);
-                    if (getTabuleiro()[c][l] == null) {
+                    l = obterNumSorteado(0, linhaMax);
+                    c = obterNumSorteado(0, colunaMax);
+                    if (getTabuleiro()[l][c] == null) {
                         p.setLinha(l);
                         p.setColuna(c);
                         getTabuleiro()[l][c] = p;
@@ -313,7 +313,10 @@ public class JogoMemoriaCtrl {
                     && (pt2.getLinha() <= linhaMax) && (pt2.getColuna() <= colunaMax)) {//Verifica se as peças pt1 e pt2 possuem linha e coluna dentro do limites do tabuleiro.
                 //int vrControle1 = tabControle[pt1.getLinha()][pt1.getColuna()];//testa se os valores de linha e coluna estão dentro dos limites.
                 //int vrControle2 = tabControle[pt2.getLinha()][pt2.getColuna()];//testa se os valores de linha e coluna estão dentro dos limites.
-                if ((!pt1.isVirado()) && (!pt2.isVirado())) {//verifica se se ambos pussuem o valor 0
+                
+                if ((!pt1.isVirado()) && (!pt2.isVirado()) && 
+                        pt1.getIdImagem() == pt2.getIdImagem() &&
+                        (pt1.getLinha()) != pt2.getLinha() || pt1.getColuna() != pt2.getColuna()) {//verifica se se ambos pussuem o valor 0
                     resultado = JOGADA_CERTA;
                     setPontuacaoAtual(getPontuacaoAtual() + 1);
                     pt1.setVirado(true);//atualiza o valor de como virada para 1
