@@ -287,6 +287,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg00MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg03">
       <Properties>
@@ -294,6 +297,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg03MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg13">
       <Properties>
@@ -301,6 +307,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg13MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg01">
       <Properties>
@@ -308,6 +317,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg01MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg15">
       <Properties>
@@ -315,6 +327,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg15MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg23">
       <Properties>
@@ -322,6 +337,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg23MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg10">
       <Properties>
@@ -329,6 +347,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg10MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg12">
       <Properties>
@@ -336,6 +357,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg12MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg05">
       <Properties>
@@ -343,6 +367,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg05MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg21">
       <Properties>
@@ -350,6 +377,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg21MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg14">
       <Properties>
@@ -357,6 +387,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg14MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg02">
       <Properties>
@@ -364,6 +397,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg02MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg11">
       <Properties>
@@ -371,6 +407,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg11MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg04">
       <Properties>
@@ -378,6 +417,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg04MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg20">
       <Properties>
@@ -385,6 +427,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg20MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg22">
       <Properties>
@@ -392,6 +437,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg22MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg30">
       <Properties>
@@ -399,6 +447,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg30MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg27">
       <Properties>
@@ -406,6 +457,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg27MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg31">
       <Properties>
@@ -413,6 +467,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg31MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg06">
       <Properties>
@@ -420,6 +477,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg06MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg25">
       <Properties>
@@ -427,6 +487,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg25MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg26">
       <Properties>
@@ -434,6 +497,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg26MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg24">
       <Properties>
@@ -441,6 +507,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg24MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg07">
       <Properties>
@@ -448,6 +517,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg07MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg16">
       <Properties>
@@ -455,6 +527,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg16MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg17">
       <Properties>
@@ -462,6 +537,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg17MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg32">
       <Properties>
@@ -469,6 +547,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg32MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg33">
       <Properties>
@@ -476,6 +557,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg33MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg34">
       <Properties>
@@ -483,6 +567,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg34MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg35">
       <Properties>
@@ -490,6 +577,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg35MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg36">
       <Properties>
@@ -497,6 +587,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg36MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg37">
       <Properties>
@@ -504,6 +597,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg37MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg40">
       <Properties>
@@ -511,6 +607,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg40MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg41">
       <Properties>
@@ -518,6 +617,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg41MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg42">
       <Properties>
@@ -525,6 +627,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg42MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg43">
       <Properties>
@@ -532,6 +637,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg43MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg44">
       <Properties>
@@ -539,6 +647,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg44MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg45">
       <Properties>
@@ -546,6 +657,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg45MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg46">
       <Properties>
@@ -553,6 +667,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg46MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg47">
       <Properties>
@@ -560,6 +677,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg47MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg50">
       <Properties>
@@ -567,6 +687,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg50MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg51">
       <Properties>
@@ -574,6 +697,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg51MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg52">
       <Properties>
@@ -581,6 +707,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg52MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg53">
       <Properties>
@@ -588,6 +717,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg53MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg54">
       <Properties>
@@ -595,6 +727,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg54MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg55">
       <Properties>
@@ -602,6 +737,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg55MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg56">
       <Properties>
@@ -609,6 +747,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg56MouseClicked"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblImg57">
       <Properties>
@@ -616,6 +757,9 @@
           <Image iconType="3" name="/jogomemoria/gui/imagens/cartavirada.jpg"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lblImg57MouseClicked"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
