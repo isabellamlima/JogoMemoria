@@ -51,6 +51,7 @@ public class JogoMemoriaCtrl {
     private int qtdImgsPartida; //Quantidade de imgens usadas na partida. Controla o uso de células do vetor imgsPartida conforme o nível da partida atual.           
     private PecaTabuleiro tabuleiro[][] = new PecaTabuleiro[MAX_LIN_DIFICIL][MAX_COL_DIFICIL]; //Matriz que implementa o tabuleiro do jogo onde as imagens estão distribuidas. Considera o tamanho máximo possível de ser usado que é para o nível difícil. Cada célula contém um número referente à imagem que ocupará a posição.
     private int qtdePecasPorImg = INDEFINIDO;
+    
 
     /* ----------------------- MÉTODOS -----------------------*/
     /**
@@ -62,7 +63,10 @@ public class JogoMemoriaCtrl {
         acertosPartida = INDEFINIDO;
         nivelAtual = INDEFINIDO;
         qtdImgsPartida = INDEFINIDO;
-
+        
+        limpaRecords();
+        
+        
         /*Resolvido*/
  /*ATIVIDADE #1 - Implementar um construtor para esta classe. Ele deve
          iniciar todos os atributos pertinentes, da seguinte forma:
@@ -72,6 +76,15 @@ public class JogoMemoriaCtrl {
          - O nível da partida atualdeve ser INDEFINIDO
          - A quantidade de peças usadas na partida deve ser INDEFINIDO pois aindanão se sabe o nível.
          */
+    }
+    private void limpaRecords(){
+        for(int c = 0; c <= 2; c++){
+            
+            for (int l = 0; l <=2; l++ ){
+                tabRecordes[c][l] = 0;
+            }
+            
+        }
     }
 
     /**
@@ -355,6 +368,7 @@ public class JogoMemoriaCtrl {
                     if ((!pt1.isVirado()) && (!pt2.isVirado()) && (!pt3.isVirado())) {//verifica se se ambos pussuem o valor 0
                         resultado = JOGADA_CERTA;
                         setPontuacaoAtual(getPontuacaoAtual() + 1);
+                        inserirRecordes();
                         pt1.setVirado(true);//atualiza o valor de como virada para 1
                         pt2.setVirado(true);//atualiza o valor de como virada para 1
                         pt3.setVirado(true);
@@ -365,6 +379,32 @@ public class JogoMemoriaCtrl {
             }
         }
         return resultado;
+    }
+    
+    private void inserirRecordes(){
+        int records[][] = {{0,0,0},
+                          {0,0,0},
+                          {0,0,0},
+                         };
+        records = getTabRecordes();
+        
+        int pontuacao = 0;
+        pontuacao = getPontuacaoAtual();
+        int nivelAtual = getNivelAtual();
+      
+            if(records[nivelAtual][OURO] > pontuacao){
+                records[nivelAtual][OURO] = pontuacao;                
+            }else{
+                if(records[nivelAtual][PRATA]>pontuacao){
+                    records[nivelAtual][PRATA] = pontuacao;
+                }else{
+                    if(records[nivelAtual][BRONZE] > pontuacao){
+                        records[nivelAtual][BRONZE] = pontuacao;
+                    }
+                }
+            }
+        
+        
     }
 
     /**
@@ -408,6 +448,7 @@ public class JogoMemoriaCtrl {
      */
     public void setPontuacaoAtual(int pontuacaoAtual) {
         this.pontuacaoAtual = pontuacaoAtual;
+        
     }
 
     /**

@@ -17,7 +17,7 @@ import jogomemoria.model.PecaTabuleiro;
  */
 public class JogoMemoriaPrincipal extends javax.swing.JFrame {
 
-    private JogoMemoriaJtabuleiro tb = new JogoMemoriaJtabuleiro();
+    private JogoMemoriaTabuleiro tb = new JogoMemoriaTabuleiro();
     private JogoMemoriaJPanelDificil jpd;
     private JogoMemoriaJPanelFacil jpf;
     private JogoMemoriaJPanelIntermediario jpi;
@@ -43,7 +43,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         cgTempo = new javax.swing.JSpinner();
         bntIniciar = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        pnlPrincipal2 = new javax.swing.JPanel();
+        pnlTitulo = new javax.swing.JPanel();
         lblImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -123,28 +123,28 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
 
         sppPrincipal.setLeftComponent(pnlPrincipal);
 
-        pnlPrincipal2.setBackground(new java.awt.Color(0, 255, 255));
+        pnlTitulo.setBackground(new java.awt.Color(0, 255, 255));
 
         lblImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/capa.jpg"))); // NOI18N
 
-        javax.swing.GroupLayout pnlPrincipal2Layout = new javax.swing.GroupLayout(pnlPrincipal2);
-        pnlPrincipal2.setLayout(pnlPrincipal2Layout);
-        pnlPrincipal2Layout.setHorizontalGroup(
-            pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlPrincipal2Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlTituloLayout = new javax.swing.GroupLayout(pnlTitulo);
+        pnlTitulo.setLayout(pnlTituloLayout);
+        pnlTituloLayout.setHorizontalGroup(
+            pnlTituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlTituloLayout.createSequentialGroup()
                 .addGap(155, 155, 155)
                 .addComponent(lblImage)
                 .addContainerGap(158, Short.MAX_VALUE))
         );
-        pnlPrincipal2Layout.setVerticalGroup(
-            pnlPrincipal2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlPrincipal2Layout.createSequentialGroup()
+        pnlTituloLayout.setVerticalGroup(
+            pnlTituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlTituloLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(lblImage)
                 .addContainerGap(36, Short.MAX_VALUE))
         );
 
-        sppPrincipal.setRightComponent(pnlPrincipal2);
+        sppPrincipal.setRightComponent(pnlTitulo);
 
         getContentPane().add(sppPrincipal, java.awt.BorderLayout.CENTER);
 
@@ -152,27 +152,33 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bntIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntIniciarActionPerformed
+        String item = (String) cmbNivel.getSelectedItem();
         int nivelS = 0;
-        String op = (String) cmbNivel.getSelectedItem();
-        if (op.equals("Fácil")) {
+        //String op = (String) cmbNivel.getSelectedItem();
+        if (item.equals("Fácil")) {
             nivelS = controle.FACIL;
-
+            tb.mostrarTabuleiro(jpf);
+            tb.setSize(800,600);
         }
-        if (op.equals("Intermediário")) {
+        if (item.equals("Intermediário")) {
             nivelS = controle.INTERMEDIARIO;
+            tb.mostrarTabuleiro(jpi);
+            tb.setSize(1024, 768);
         }
-        if (op.equals("Difícil")) {
+        if (item.equals("Difícil")) {
             nivelS = controle.DIFICIL;
+            tb.mostrarTabuleiro(jpd);
         }
         int tempoL = (((Integer) cgTempo.getValue()).intValue());
         sppPrincipal.setRightComponent(tb);
-        this.repaint();
         controle.iniciarPartida(nivelS, tempoL);
 
         mostrarTabuleiro(true);
         int resp = JOptionPane.showConfirmDialog(this, "O jogo pode ser iniciado?", "Confirme inicio", JOptionPane.YES_NO_OPTION);
         if (resp == JOptionPane.YES_OPTION) {
             mostrarTabuleiro(false);
+        } else {
+            sppPrincipal.setRightComponent(pnlTitulo);
         }
 
     }//GEN-LAST:event_bntIniciarActionPerformed
@@ -230,44 +236,35 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel lblNivel;
     private javax.swing.JLabel lblTempo;
     private javax.swing.JPanel pnlPrincipal;
-    private javax.swing.JPanel pnlPrincipal2;
+    private javax.swing.JPanel pnlTitulo;
     private javax.swing.JSplitPane sppPrincipal;
     // End of variables declaration//GEN-END:variables
 
     public void mostrarTabuleiro(boolean inicioJogo) {
+        PecaTabuleiro pctb[][] = controle.getTabuleiro();
+        int idImg;
+        ImageIcon imgDuvida = new ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/cartavirada.jpg"));
+
         int nivelA = controle.getNivelAtual();
-
-        //PecaTabuleiro pctb[][] = controle.getTabuleiro();
-        //int idImg;
-        //ImageIcon imgDuvida = new ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/cartavirada.jpg"));
-        if (controle.getNivelAtual() == 0) {
-            if (controle.FACIL == nivelA) {
-                tb.getsppTabuleiro().setLeftComponent(jpf);
-                this.setSize(800, 600);
-                jpf.mostrar(inicioJogo);
-            }
-
-            //}
-            //if (controle.INTERMEDIARIO == nivelA) {
-            //tb.getSPPTabuleiro().setLeftComponent(jpi);
-            //}
-            //if (controle.DIFICIL == nivelA) {
-            //tb.getSPPTabuleiro().setLeftComponent(jpd);
-            //}
-            //}
-            //}
-            if (controle.getNivelAtual() == controle.INTERMEDIARIO) {
-                tb.getsppTabuleiro().setLeftComponent(jpi);
-                this.setSize(800, 600);
-                jpi.mostrar(inicioJogo);
-            }
-
-            if (controle.getNivelAtual() == controle.DIFICIL) {
-                tb.getsppTabuleiro().setLeftComponent(jpd);
-                this.setSize(800, 600);
-                jpd.mostrar(inicioJogo);
-            }
-
+        if (controle.FACIL == nivelA) {
+            tb.getSppTabuleiro().setLeftComponent(jpf);
+            this.setSize(800, 600);
+            jpf.mostrar(inicioJogo);
         }
+        if (controle.INTERMEDIARIO == nivelA) {
+            tb.getSppTabuleiro().setLeftComponent(jpi);
+            this.setSize(800, 600);
+            jpi.mostrar(inicioJogo);
+        }
+
+        if (controle.DIFICIL == nivelA) {
+            tb.getSppTabuleiro().setLeftComponent(jpd);
+            this.setSize(800, 600);
+            jpd.mostrar(inicioJogo);
+        }
+
+        sppPrincipal.setRightComponent(tb);
+        this.repaint();
     }
 }
+

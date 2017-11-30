@@ -186,9 +186,9 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
             if (result == controle.JOGADA_CERTA) {
                 JOptionPane.showMessageDialog(this, "Muito Bem!!!", "Resultado da Jogada", JOptionPane.INFORMATION_MESSAGE);
             } else if (result == controle.JOGADA_ERRADA) {
-                JOptionPane.showMessageDialog(this, "Você errou. Tente novamente", "Resultado da jogada", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Voce errou. Tente novamente", "Resultado da jogada", JOptionPane.INFORMATION_MESSAGE);
             } else if (result == controle.JOGADA_INVALIDA) {
-                JOptionPane.showMessageDialog(this, "Isso não vale!", "Resultado da jogada", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Isso nao vale!", "Resultado da jogada", JOptionPane.ERROR_MESSAGE);
             }
             pecasSelecionadas = 0;
             mostrar(false);
@@ -245,7 +245,7 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
         setBackground(new java.awt.Color(153, 255, 255));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 2, 36)); // NOI18N
-        lblTitulo.setText("Jogo da Memória");
+        lblTitulo.setText("Jogo da Mem�ria");
 
         lblTime.setFont(new java.awt.Font("Times New Roman", 2, 36)); // NOI18N
         lblTime.setForeground(new java.awt.Color(255, 0, 0));
