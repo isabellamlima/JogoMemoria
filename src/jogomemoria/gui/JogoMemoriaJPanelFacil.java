@@ -223,8 +223,6 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblTitulo = new javax.swing.JLabel();
-        lblTime = new javax.swing.JLabel();
         LblImg00 = new javax.swing.JLabel();
         LblImg02 = new javax.swing.JLabel();
         LblImg01 = new javax.swing.JLabel();
@@ -243,13 +241,6 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
         LblImg20 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(153, 255, 255));
-
-        lblTitulo.setFont(new java.awt.Font("Times New Roman", 2, 36)); // NOI18N
-        lblTitulo.setText("Jogo da Mem�ria");
-
-        lblTime.setFont(new java.awt.Font("Times New Roman", 2, 36)); // NOI18N
-        lblTime.setForeground(new java.awt.Color(255, 0, 0));
-        lblTime.setText("Last Time");
 
         LblImg00.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/cartavirada.jpg"))); // NOI18N
         LblImg00.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -368,11 +359,6 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(lblTitulo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblTime)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -412,10 +398,7 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lblTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblTime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
+                .addGap(60, 60, 60)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(LblImg01)
                     .addComponent(LblImg00)
@@ -525,8 +508,6 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
     private javax.swing.JLabel LblImg31;
     private javax.swing.JLabel LblImg32;
     private javax.swing.JLabel LblImg33;
-    private javax.swing.JLabel lblTime;
-    private javax.swing.JLabel lblTitulo;
     // End of variables declaration//GEN-END:variables
 
     public javax.swing.JLabel getLblImg00() {
