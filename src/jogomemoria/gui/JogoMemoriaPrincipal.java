@@ -42,7 +42,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         cmbNivel = new javax.swing.JComboBox();
         cgTempo = new javax.swing.JSpinner();
         bntIniciar = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        bntCancelar = new javax.swing.JButton();
         pnlTitulo = new javax.swing.JPanel();
         lblImage = new javax.swing.JLabel();
 
@@ -76,11 +76,11 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jButton1.setText("Cancelar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        bntCancelar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        bntCancelar.setText("Cancelar");
+        bntCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                bntCancelarActionPerformed(evt);
             }
         });
 
@@ -102,7 +102,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
                 .addGap(41, 41, 41)
                 .addGroup(pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(bntIniciar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(bntCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(491, Short.MAX_VALUE))
         );
         pnlPrincipalLayout.setVerticalGroup(
@@ -117,7 +117,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
                     .addGroup(pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(lblNivel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(cmbNivel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(bntCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -163,7 +163,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         if (item.equals("Intermediário")) {
             nivelS = controle.INTERMEDIARIO;
             tb.mostrarTabuleiro(jpi);
-            tb.setSize(1024, 768);
+            tb.setSize(6024, 1024);
         }
         if (item.equals("Difícil")) {
             nivelS = controle.DIFICIL;
@@ -183,9 +183,9 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
 
     }//GEN-LAST:event_bntIniciarActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void bntCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntCancelarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_bntCancelarActionPerformed
 
     private void cmbNivelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbNivelActionPerformed
         // TODO add your handling code here:
@@ -228,10 +228,10 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bntCancelar;
     private javax.swing.JButton bntIniciar;
     private javax.swing.JSpinner cgTempo;
     private javax.swing.JComboBox cmbNivel;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel lblImage;
     private javax.swing.JLabel lblNivel;
     private javax.swing.JLabel lblTempo;
@@ -253,7 +253,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         }
         if (controle.INTERMEDIARIO == nivelA) {
             tb.getSppTabuleiro().setLeftComponent(jpi);
-            this.setSize(800, 600);
+            this.setSize(6024, 1068);
             jpi.mostrar(inicioJogo);
         }
 
