@@ -25,7 +25,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
       <SubComponents>
-        <Component class="jogomemoria.gui.JogoMemoriaJInfo" name="jogoMemoriaJInfo1">
+        <Component class="jogomemoria.gui.JogoMemoriaJInfo" name="jogoMemoriaJInfo2">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
               <JSplitPaneConstraints position="right"/>

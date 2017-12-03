@@ -240,7 +240,7 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
         LblImg32 = new javax.swing.JLabel();
         LblImg20 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(153, 255, 255));
+        setBackground(new java.awt.Color(204, 255, 204));
 
         LblImg00.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/cartavirada.jpg"))); // NOI18N
         LblImg00.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -359,7 +359,7 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(2, 2, 2)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(LblImg00)
@@ -393,12 +393,12 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
                         .addComponent(LblImg32)
                         .addGap(18, 18, 18)
                         .addComponent(LblImg33)))
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(60, 60, 60)
+                .addGap(2, 2, 2)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(LblImg01)
                     .addComponent(LblImg00)
