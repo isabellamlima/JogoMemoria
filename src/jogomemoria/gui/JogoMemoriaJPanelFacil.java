@@ -185,13 +185,15 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
             ptSel2 = pt[linha][coluna];
             int result = controle.realizarJogada(ptSel1, ptSel2);
             if (result == controle.JOGADA_CERTA) {
-                JOptionPane.showMessageDialog(this, "Muito Bem!!!", "Resultado da Jogada", JOptionPane.INFORMATION_MESSAGE);
                 Sound.ACERTO.play();
+                JOptionPane.showMessageDialog(this, "Muito Bem!!!", "Resultado da Jogada", JOptionPane.INFORMATION_MESSAGE);
+                
             } else if (result == controle.JOGADA_ERRADA) {
+                 Sound.ERRO.play();
                 JOptionPane.showMessageDialog(this, "Isso não vale!", "Resultado da jogada", JOptionPane.INFORMATION_MESSAGE);
-                Sound.ERRO.play();
+                
             } else if (result == controle.JOGADA_INVALIDA) {
-                //Sound.ERRO.play();
+                Sound.ERRO.play();
                 JOptionPane.showMessageDialog(this, "Voce errou. Tente novamente", "Resultado da jogada", JOptionPane.ERROR_MESSAGE);
             }
             pecasSelecionadas = 0;
