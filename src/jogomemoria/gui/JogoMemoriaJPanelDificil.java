@@ -9,6 +9,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import jogomemoria.control.JogoMemoriaCtrl;
+import jogomemoria.gui.sons.Sound;
 import jogomemoria.model.PecaTabuleiro;
 
 /**
@@ -422,10 +423,15 @@ public class JogoMemoriaJPanelDificil extends javax.swing.JPanel {
             ptSel3 = pt[linha][coluna];
             int result = controle.realizarJogada(ptSel1, ptSel2, ptSel3);
             if (result == controle.JOGADA_CERTA) {
+                Sound.ACERTO.play();
                 JOptionPane.showMessageDialog(this, "Muito Bem!!!", "Resultado da Jogada", JOptionPane.INFORMATION_MESSAGE);
+                
             } else if (result == controle.JOGADA_ERRADA) {
+                Sound.ERRO.play();
                 JOptionPane.showMessageDialog(this, "Você errou. Tente novamente", "Resultado da jogada", JOptionPane.INFORMATION_MESSAGE);
+                
             } else if (result == controle.JOGADA_INVALIDA) {
+                Sound.ERRO.play();
                 JOptionPane.showMessageDialog(this, "Isso não vale!", "Resultado da jogada", JOptionPane.ERROR_MESSAGE);
             }
             pecasSelecionadas = 0;

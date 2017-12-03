@@ -194,6 +194,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         mostrarTabuleiro(true);
         int resp = JOptionPane.showConfirmDialog(this, "O jogo pode ser iniciado?", "Confirme inicio", JOptionPane.YES_NO_OPTION);
         if (resp == JOptionPane.YES_OPTION) {
+            Sound.INICIO.play();
             mostrarTabuleiro(false);
              //Sound.INICIO.play();
         } else {
