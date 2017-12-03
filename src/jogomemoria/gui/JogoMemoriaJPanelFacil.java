@@ -14,6 +14,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import jogomemoria.control.JogoMemoriaCtrl;
+import jogomemoria.gui.sons.Sound;
 import jogomemoria.model.PecaTabuleiro;
 
 /**
@@ -185,10 +186,13 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
             int result = controle.realizarJogada(ptSel1, ptSel2);
             if (result == controle.JOGADA_CERTA) {
                 JOptionPane.showMessageDialog(this, "Muito Bem!!!", "Resultado da Jogada", JOptionPane.INFORMATION_MESSAGE);
+                Sound.ACERTO.play();
             } else if (result == controle.JOGADA_ERRADA) {
-                JOptionPane.showMessageDialog(this, "Voce errou. Tente novamente", "Resultado da jogada", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Isso não vale!", "Resultado da jogada", JOptionPane.INFORMATION_MESSAGE);
+                Sound.ERRO.play();
             } else if (result == controle.JOGADA_INVALIDA) {
-                JOptionPane.showMessageDialog(this, "Isso nao vale!", "Resultado da jogada", JOptionPane.ERROR_MESSAGE);
+                //Sound.ERRO.play();
+                JOptionPane.showMessageDialog(this, "Voce errou. Tente novamente", "Resultado da jogada", JOptionPane.ERROR_MESSAGE);
             }
             pecasSelecionadas = 0;
             mostrar(false);

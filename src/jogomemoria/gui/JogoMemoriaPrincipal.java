@@ -10,6 +10,7 @@ import java.awt.Component;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import jogomemoria.control.JogoMemoriaCtrl;
+import jogomemoria.gui.sons.Sound;
 import jogomemoria.model.PecaTabuleiro;
 
 /**
@@ -194,6 +195,7 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
         int resp = JOptionPane.showConfirmDialog(this, "O jogo pode ser iniciado?", "Confirme inicio", JOptionPane.YES_NO_OPTION);
         if (resp == JOptionPane.YES_OPTION) {
             mostrarTabuleiro(false);
+             //Sound.INICIO.play();
         } else {
             sppPrincipal.setRightComponent(pnlTitulo);
         }

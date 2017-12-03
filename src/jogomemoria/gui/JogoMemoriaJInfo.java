@@ -1,6 +1,7 @@
 package jogomemoria.gui;
 
 import java.awt.Container;
+import javax.swing.JLabel;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -35,7 +36,7 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
         jTable1 = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        lblPontosAtual = new javax.swing.JLabel();
         lblImgOuro = new javax.swing.JLabel();
         lblImgPrata = new javax.swing.JLabel();
         lblImgBronze = new javax.swing.JLabel();
@@ -65,8 +66,8 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
         jLabel8.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
         jLabel8.setText("Score:");
 
-        jLabel9.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
-        jLabel9.setText("0");
+        lblPontosAtual.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
+        lblPontosAtual.setText("0");
 
         lblImgOuro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/ouro.png"))); // NOI18N
 
@@ -91,7 +92,7 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel8)
                 .addGap(26, 26, 26)
-                .addComponent(jLabel9)
+                .addComponent(lblPontosAtual)
                 .addGap(32, 32, 32))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -144,7 +145,7 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jLabel9))
+                    .addComponent(lblPontosAtual))
                 .addGap(21, 21, 21))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -153,7 +154,6 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
@@ -162,6 +162,7 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
     private javax.swing.JLabel lblImgOuro;
     private javax.swing.JLabel lblImgPrata;
     private javax.swing.JLabel lblOuro;
+    private javax.swing.JLabel lblPontosAtual;
     private javax.swing.JLabel lblPrata;
     // End of variables declaration//GEN-END:variables
 
