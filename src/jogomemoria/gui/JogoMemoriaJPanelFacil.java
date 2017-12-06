@@ -24,7 +24,7 @@ import jogomemoria.model.PecaTabuleiro;
 public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
 
     private JogoMemoriaCtrl controle;
-
+    private JogoMemoriaJInfo info;
     PecaTabuleiro ptSel1;
     PecaTabuleiro ptSel2;
     int pecasSelecionadas = 0;
@@ -32,9 +32,11 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
     /**
      * Creates new form JogoMemoriaJPanelFacil
      */
-    public JogoMemoriaJPanelFacil(JogoMemoriaCtrl ctrl) {
+    public JogoMemoriaJPanelFacil(JogoMemoriaCtrl ctrl, JogoMemoriaJInfo info) {
         initComponents();
         controle = ctrl;
+        this.info = info;
+        
     }
 
     public void mostrar(boolean inicioJogo) {
@@ -187,7 +189,7 @@ public class JogoMemoriaJPanelFacil extends javax.swing.JPanel {
             if (result == controle.JOGADA_CERTA) {
                 Sound.ACERTO.play();
                 JOptionPane.showMessageDialog(this, "Muito Bem!!!", "Resultado da Jogada", JOptionPane.INFORMATION_MESSAGE);
-                
+                info.atualizaScores(controle);
             } else if (result == controle.JOGADA_ERRADA) {
                  Sound.ERRO.play();
                 JOptionPane.showMessageDialog(this, "Isso não vale!", "Resultado da jogada", JOptionPane.INFORMATION_MESSAGE);

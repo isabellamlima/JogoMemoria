@@ -19,14 +19,16 @@ import jogomemoria.model.PecaTabuleiro;
 public class JogoMemoriaJPanelIntermediario extends javax.swing.JPanel {
 
     private JogoMemoriaCtrl controle;
+    private JogoMemoriaJInfo info;
 
     PecaTabuleiro ptSel1;
     PecaTabuleiro ptSel2;
     int pecasSelecionadas = 0;
 
-    public JogoMemoriaJPanelIntermediario(JogoMemoriaCtrl ctrl) {
+    public JogoMemoriaJPanelIntermediario(JogoMemoriaCtrl ctrl, JogoMemoriaJInfo info) {
         initComponents();
         controle = ctrl;
+        this.info = info;
 
     }
 

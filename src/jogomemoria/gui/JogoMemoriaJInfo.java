@@ -2,6 +2,8 @@ package jogomemoria.gui;
 
 import java.awt.Container;
 import javax.swing.JLabel;
+import jogomemoria.control.JogoMemoriaCtrl;
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -14,12 +16,23 @@ import javax.swing.JLabel;
  * @author isamo
  */
 public class JogoMemoriaJInfo extends javax.swing.JPanel {
-
     /**
      * Creates new form JogoMemoriaJInfo
      */
     public JogoMemoriaJInfo() {
-        initComponents();
+        
+        initComponents();        
+
+        }
+    public void JogoMemoriaJInfo(){
+        
+    }
+    public void atualizaScores (JogoMemoriaCtrl ctrl){
+        lbScore.setText(""+ctrl.getPontuacaoAtual());
+        lblOuro.setText(""+ctrl.getRecordeOuro());
+        lblPrata.setText(""+ctrl.getRecordePrata());
+        lblBronze.setText(""+ctrl.getRecordeBronze());
+                       
     }
 
     /**
@@ -36,7 +49,7 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
         jTable1 = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        lblPontosAtual = new javax.swing.JLabel();
+        lbScore = new javax.swing.JLabel();
         lblImgOuro = new javax.swing.JLabel();
         lblImgPrata = new javax.swing.JLabel();
         lblImgBronze = new javax.swing.JLabel();
@@ -66,8 +79,8 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
         jLabel8.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
         jLabel8.setText("Score:");
 
-        lblPontosAtual.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
-        lblPontosAtual.setText("0");
+        lbScore.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
+        lbScore.setText("0");
 
         lblImgOuro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jogomemoria/gui/imagens/ouro.png"))); // NOI18N
 
@@ -88,33 +101,35 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel8)
-                .addGap(26, 26, 26)
-                .addComponent(lblPontosAtual)
-                .addGap(32, 32, 32))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblImgPrata)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lblPrata))
+                                .addGap(24, 24, 24)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(lblImgPrata)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(lblPrata, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(lblImgOuro)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(lblOuro, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(lblImgBronze)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(lblBronze, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblImgOuro)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lblOuro))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblImgBronze)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lblBronze))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(88, 88, 88)
-                        .addComponent(jLabel4)))
-                .addContainerGap(114, Short.MAX_VALUE))
+                                .addGap(88, 88, 88)
+                                .addComponent(jLabel4)))
+                        .addGap(0, 67, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel8)
+                        .addGap(26, 26, 26)
+                        .addComponent(lbScore, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -142,11 +157,11 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(52, 52, 52)
                         .addComponent(lblBronze)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(lblPontosAtual))
-                .addGap(21, 21, 21))
+                    .addComponent(lbScore))
+                .addGap(20, 20, 20))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -157,12 +172,12 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
     private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JLabel lbScore;
     private javax.swing.JLabel lblBronze;
     private javax.swing.JLabel lblImgBronze;
     private javax.swing.JLabel lblImgOuro;
     private javax.swing.JLabel lblImgPrata;
     private javax.swing.JLabel lblOuro;
-    private javax.swing.JLabel lblPontosAtual;
     private javax.swing.JLabel lblPrata;
     // End of variables declaration//GEN-END:variables
 

@@ -48,6 +48,9 @@ public class JogoMemoriaTabuleiro extends javax.swing.JPanel {
     private javax.swing.JSplitPane sppTabuleiro;
     // End of variables declaration//GEN-END:variables
 
+    public JogoMemoriaJInfo getPainelInfo(){
+        return jogoMemoriaJInfo2;
+    }
     
     public void mostrarTabuleiro(JPanel pnl) {
         sppTabuleiro.setLeftComponent(pnl);

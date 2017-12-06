@@ -28,9 +28,9 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     public JogoMemoriaPrincipal() {
         initComponents();
         controle = new JogoMemoriaCtrl();
-        jpf = new JogoMemoriaJPanelFacil(controle);
-        jpi = new JogoMemoriaJPanelIntermediario(controle);
-        jpd = new JogoMemoriaJPanelDificil(controle);
+        jpf = new JogoMemoriaJPanelFacil(controle, tb.getPainelInfo());
+        jpi = new JogoMemoriaJPanelIntermediario(controle, tb.getPainelInfo());
+        jpd = new JogoMemoriaJPanelDificil(controle, tb.getPainelInfo());
     }
 
     @SuppressWarnings("unchecked")
@@ -204,7 +204,8 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_bntIniciarActionPerformed
 
     private void bntCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntCancelarActionPerformed
-        // TODO add your handling code here:
+        sppPrincipal.setRightComponent(pnlTitulo);
+        controle.encerrarJogo();
     }//GEN-LAST:event_bntCancelarActionPerformed
 
     private void cmbNivelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbNivelActionPerformed
@@ -271,6 +272,15 @@ public class JogoMemoriaPrincipal extends javax.swing.JFrame {
                 new JogoMemoriaPrincipal().setVisible(true);
             }
         });
+    }
+    
+    public void JogoEncerrado(){
+        int resp = JOptionPane.showConfirmDialog(this, "O jogo pode ser iniciado?", "Confirme inicio", JOptionPane.YES_OPTION);
+        if (resp == JOptionPane.YES_OPTION) {
+            Sound.INICIO.play();
+            mostrarTabuleiro(false);
+             //Sound.INICIO.play();
+        }
     }
 
 

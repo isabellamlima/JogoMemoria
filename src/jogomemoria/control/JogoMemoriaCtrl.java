@@ -2,6 +2,7 @@ package jogomemoria.control;
 
 import java.sql.Timestamp;
 import jogomemoria.model.PecaTabuleiro;
+import jogomemoria.gui.JogoMemoriaJInfo;
 
 public class JogoMemoriaCtrl {
 
@@ -34,6 +35,9 @@ public class JogoMemoriaCtrl {
     public static final int QTDE_PECAS_TAB_DIFICIL = 54; //Referência para a qtde de peças do tabuleiro para o nível Difícil
     public static final int MAX_COL_DIFICIL = 9; //Qtde de colunas no tabuleiro para o nível Difícil
     public static final int MAX_LIN_DIFICIL = 6; //Qtde de linhas no tabuleiro para o nível Difícil
+    public static final int ACERTOS_FACIL = 8;
+    public static final int ACERTOS_INTERMEDIARIO = 18;
+    public static final int ACERTOS_DIFICIL = 18;
 
     /* ----------------------- ATRIBUTOS -----------------------*/
     private boolean jogoIniciado; //Booleano que indica se a partida foi iniciada ou não.
@@ -52,7 +56,7 @@ public class JogoMemoriaCtrl {
     private PecaTabuleiro tabuleiro[][] = new PecaTabuleiro[MAX_LIN_DIFICIL][MAX_COL_DIFICIL]; //Matriz que implementa o tabuleiro do jogo onde as imagens estão distribuidas. Considera o tamanho máximo possível de ser usado que é para o nível difícil. Cada célula contém um número referente à imagem que ocupará a posição.
     private int qtdePecasPorImg = INDEFINIDO;
     
-
+    JogoMemoriaJInfo info = new JogoMemoriaJInfo();
     /* ----------------------- MÉTODOS -----------------------*/
     /**
      * Construtor para a classe
@@ -65,6 +69,7 @@ public class JogoMemoriaCtrl {
         qtdImgsPartida = INDEFINIDO;
         
         limpaRecords();
+        
         
         
         /*Resolvido*/
@@ -177,7 +182,7 @@ public class JogoMemoriaCtrl {
         limparImgsPartida();
         int qtdSorteadas = 0;
 
-        while (qtdSorteadas < qtdImgsPartida) {
+        while (qtdSorteadas <= qtdImgsPartida) {
             int i = obterNumSorteado(1, QTDE_IMAGENS_DISPONIVEIS);
 
             ////////// COPIEI DO LUCAS /////////
@@ -187,14 +192,16 @@ public class JogoMemoriaCtrl {
             for (int k = 0; k < qtdSorteadas; k++) {
                 if (imgsPartida[k] == i) {
                     achou = true;
+                    
                 }
-                break;
+                
             }
             if (!achou) {
                 imgsPartida[qtdSorteadas] = i;
                 qtdSorteadas++;
             }
-        }
+        }   
+        
 
         /*
          ATIVIDADE #3.
@@ -268,7 +275,7 @@ public class JogoMemoriaCtrl {
 
         }
     }
-
+    
     /**
      * Limpa os tabuleiros (Tabuleiro de imagens e o de controle) colocando 0
      * (ZERO) em cada célula, indicando que está vazia. É usado como parte da
@@ -334,6 +341,9 @@ public class JogoMemoriaCtrl {
                     setPontuacaoAtual(getPontuacaoAtual() + 1);
                     pt1.setVirado(true);//atualiza o valor de como virada para 1
                     pt2.setVirado(true);//atualiza o valor de como virada para 1
+                    
+                    
+                    
                 } else {
                     resultado = JOGADA_ERRADA;//caso ocorra erro na jogada
                 }
@@ -372,6 +382,7 @@ public class JogoMemoriaCtrl {
                         pt1.setVirado(true);//atualiza o valor de como virada para 1
                         pt2.setVirado(true);//atualiza o valor de como virada para 1
                         pt3.setVirado(true);
+                        
                     } else {
                         resultado = JOGADA_INVALIDA;
                     }
@@ -403,8 +414,31 @@ public class JogoMemoriaCtrl {
                     }
                 }
             }
+        setTabRecordes(records);
         
         
+    }
+    
+    public int getRecordeOuro(){       
+        
+       return tabRecordes[nivelAtual][OURO];
+    }
+    public int getRecordePrata(){       
+        
+       return tabRecordes[nivelAtual][PRATA];
+    }
+    public int getRecordeBronze(){       
+        
+       return tabRecordes[nivelAtual][BRONZE];
+    }
+    
+    public void encerrarJogo(){
+        limparTabuleiro();
+        limpaRecords();
+        limparImgsPartida();
+        setJogoIniciado(false);
+        setPontuacaoAtual(0);
+        System.exit(FACIL);
     }
 
     /**

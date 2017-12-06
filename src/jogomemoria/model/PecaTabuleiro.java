@@ -7,6 +7,7 @@ public class PecaTabuleiro {
     private int linha;//linha do tabuleiro
     private int coluna;//linha da coluna
     private boolean virado;
+    private int qtdColocada;
 
     public int getNumero() {
         return numero;
@@ -64,6 +65,20 @@ public class PecaTabuleiro {
      */
     public void setVirado(boolean virado) {
         this.virado = virado;
+    }
+
+    /**
+     * @return the qtdColocada
+     */
+    public int getQtdColocada() {
+        return qtdColocada;
+    }
+
+    /**
+     * @param qtdColocada the qtdColocada to set
+     */
+    public void setQtdColocada(int qtdColocada) {
+        this.qtdColocada = qtdColocada;
     }
 
 }
