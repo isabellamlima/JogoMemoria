@@ -339,6 +339,7 @@ public class JogoMemoriaCtrl {
                         (pt1.getLinha()) != pt2.getLinha() || pt1.getColuna() != pt2.getColuna()) {//verifica se se ambos pussuem o valor 0
                     resultado = JOGADA_CERTA;
                     setPontuacaoAtual(getPontuacaoAtual() + 1);
+                    
                     pt1.setVirado(true);//atualiza o valor de como virada para 1
                     pt2.setVirado(true);//atualiza o valor de como virada para 1
                     
@@ -392,7 +393,7 @@ public class JogoMemoriaCtrl {
         return resultado;
     }
     
-    private void inserirRecordes(){
+    public void inserirRecordes(){
         int records[][] = {{0,0,0},
                           {0,0,0},
                           {0,0,0},

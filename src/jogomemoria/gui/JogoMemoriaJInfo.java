@@ -28,6 +28,7 @@ public class JogoMemoriaJInfo extends javax.swing.JPanel {
         
     }
     public void atualizaScores (JogoMemoriaCtrl ctrl){
+        ctrl.inserirRecordes();
         lbScore.setText(""+ctrl.getPontuacaoAtual());
         lblOuro.setText(""+ctrl.getRecordeOuro());
         lblPrata.setText(""+ctrl.getRecordePrata());
